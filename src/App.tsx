@@ -5,10 +5,12 @@ import About from "./pages/About";
 import Sustainability from "./pages/Sustainability";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
+import CursorDot from "./components/CursorDot";
 
 const App = () => {
   return (
     <Router>
+      <CursorDot/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/business" element={<Business />} />
@@ -19,6 +21,8 @@ const App = () => {
         <Route path="/service" element={<TermsOfService />} />
       </Routes>
     </Router>
+
+
   );
 };
 
