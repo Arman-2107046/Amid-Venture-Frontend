@@ -7,7 +7,8 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                roboto: ['Roboto', 'sans-serif'],
+                ibm: ['"IBM Plex Sans Condensed"', 'sans-serif'],
+                roboto: ['"Roboto"', 'sans-serif'],
             },
         },
     },
