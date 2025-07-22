@@ -6,11 +6,13 @@ import Sustainability from "./pages/Sustainability";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import CursorDot from "./components/CursorDot";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
     <Router>
-      <CursorDot/>
+      <CursorDot />
+      <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/business" element={<Business />} />
@@ -21,8 +23,6 @@ const App = () => {
         <Route path="/service" element={<TermsOfService />} />
       </Routes>
     </Router>
-
-
   );
 };
 
