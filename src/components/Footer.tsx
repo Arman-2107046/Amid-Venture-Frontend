@@ -98,7 +98,7 @@
 //     <footer className="bg-stone-50 text-stone-800"
 // >
 //       <div className=""
-      
+
 //         style={{backgroundColor: '#fafaf9',
 //           backgroundImage: 'url("https://www.transparenttextures.com/patterns/light-wool.png")',}}
 //       >
@@ -217,8 +217,6 @@
 //   );
 // }
 
-
-
 import { Facebook, Linkedin, Youtube, Mail, Phone } from "lucide-react";
 
 export default function Footer() {
@@ -234,13 +232,15 @@ export default function Footer() {
       >
         <div className="grid grid-cols-1 gap-12 px-6 py-16 mx-auto max-w-7xl md:grid-cols-2 lg:grid-cols-4">
           {/* Mission Section */}
-          <div className="col-span-1 space-y-6 md:col-span-2">
+          <div className="col-span-1 space-y-6 md:col-span-2 max-w-[30rem]">
             <h2 className="text-2xl font-bold leading-tight uppercase">
               Crafting Legacies for Generations
             </h2>
             <p className="text-sm text-stone-700 md:text-base">
-              Together, we challenge convention and create opportunities that
-              shape a brighter, more sustainable world.
+              Together, we challenge convention, and craft
+              innovative solutions that redefine the textile industry. With a
+              deep commitment to quality, sustainability, and ethical practices,
+              we shape a brighter world.
             </p>
 
             <div className="flex flex-col gap-6 text-sm font-medium sm:flex-row sm:gap-12">
@@ -277,13 +277,18 @@ export default function Footer() {
               Company
             </h3>
             <ul className="space-y-3 text-sm text-stone-600">
-              {["News", "Career", "Businesses", "Sustainability"].map((item) => (
-                <li key={item}>
-                  <a href="#" className="transition-colors hover:text-amber-500">
-                    {item}
-                  </a>
-                </li>
-              ))}
+              {["Home","About Us", "Business", "Sustainability", "Contact"].map(
+                (item) => (
+                  <li key={item}>
+                    <a
+                      href="#"
+                      className="transition-colors hover:text-amber-500"
+                    >
+                      {item}
+                    </a>
+                  </li>
+                )
+              )}
             </ul>
           </div>
 
@@ -293,9 +298,12 @@ export default function Footer() {
               Useful Links
             </h3>
             <ul className="space-y-3 text-sm text-stone-600">
-              {["Media", "Sponsorship", "Contact", "Sitemap"].map((item) => (
+              {["Terms Of Service", "Privacy Policy","Sitemap"].map((item) => (
                 <li key={item}>
-                  <a href="#" className="transition-colors hover:text-amber-500">
+                  <a
+                    href="#"
+                    className="transition-colors hover:text-amber-500"
+                  >
                     {item}
                   </a>
                 </li>
@@ -319,6 +327,8 @@ export default function Footer() {
               &copy; {new Date().getFullYear()} AMID. All rights reserved.
             </p>
           </div>
+
+
 
           {/* Social Icons */}
           <div className="flex gap-4 text-stone-500">

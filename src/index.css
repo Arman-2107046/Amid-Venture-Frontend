@@ -2,7 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "tw-animate-css";
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+}
+
+
 body {
     font-family: "Roboto", sans-serif;
 }
   
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.animate-slideIn {
+  animation: slideIn 1s ease-out forwards;
+}
