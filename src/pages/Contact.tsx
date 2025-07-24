@@ -1,3 +1,4 @@
+import ContactForm from "../components/ContactComponents/ContactForm"
 import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 
@@ -21,6 +22,12 @@ const Contact = () => {
 
       </div>
     </header>
+
+
+<section>
+<ContactForm/>
+  
+</section>
 
     <Footer/>
   </div>
