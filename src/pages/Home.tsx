@@ -4,6 +4,31 @@ import SlidingGallery from "../components/HomeComponents/SlidingGallery";
 // import HeroHeadline from "../components/HomeComponents/HeroHeadline";
 import Navbar from "../components/Navbar";
 import { motion } from "framer-motion";
+import { ArrowRight } from 'lucide-react';
+
+
+// Custom CSS for the liquid glass effect
+const style = document.createElement('style');
+style.innerHTML = `
+  @keyframes liquidGlass {
+    from {
+      background-position: -100% 0;
+    }
+    to {
+      background-position: 100% 0;
+    }
+  }
+  .liquid-glass {
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    background-size: 200% 100%;
+    animation: liquidGlass 2s ease-in-out infinite;
+  }
+  .group:hover .liquid-glass {
+    animation-play-state: running;
+  }
+`;
+document.head.appendChild(style);
+
 
 const Home = () => {
   return (
@@ -59,10 +84,10 @@ const Home = () => {
       <section className="px-6 py-16 bg-gray-100">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="mb-6 text-4xl font-bold text-gray-800">
-            Amid Venture is fueled by a passion for quality and a commitment to
+            Amid Venture is fueled by a commitment to
             global excellence.
           </h1>
-          <p className="text-lg leading-relaxed text-gray-600">
+          <p className="text-lg font-light leading-relaxed text-gray-600">
             Driven by integrity and innovation, we deliver premium textile
             products that meet the highest standards of craftsmanship. Our
             dedicated team works tirelessly to build lasting partnerships and
@@ -76,6 +101,20 @@ const Home = () => {
       <section className="flex items-center justify-center ">
         <SlidingGallery />
       </section>
+
+      {/* ANCHOR TAG SECTION  */}
+
+      <section className="flex justify-center py-8 font-extralight">
+  <a
+    href="/about"
+    className="relative flex items-center text-lg text-gray-800 cursor-pointer select-none group"
+  >
+    Know More About Us
+    <ArrowRight className="w-4 h-4 ml-2 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
+    {/* ultra-thin underline */}
+    <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-gray-800 transition-all duration-500 ease-in-out group-hover:w-full" />
+  </a>
+</section>
 
 
 

@@ -454,7 +454,7 @@ export default function SlidingGallery() {
   const x = useMotionValue(0);
   const controls = useAnimation();
   const isDragging = useRef(false);
-  const animationRef = useRef(null);
+  const animationRef = useRef<NodeJS.Timeout | null>(null );
   
   // Create triple array for seamless infinite scrolling
   const strip = [...images, ...images, ...images];
