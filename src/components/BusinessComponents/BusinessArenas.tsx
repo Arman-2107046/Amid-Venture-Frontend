@@ -14,19 +14,27 @@ const businessAreas = [
     path: "/apparel",
   },
   {
-    title: "ACCESSORIES",
-    image: "/BusinessImages/accessories.jpg",
-    description:
-      "Producing elegant accessories that complement modern lifestyles, combining style with function.",
-    path: "/accessories",
-  },
-  {
     title: "FOOD",
     image: "/BusinessImages/food.jpg",
     description:
       "Delivering fresh, quality-assured food products with a focus on safety, taste, and sustainability.",
     path: "/food",
   },
+  {
+    title: "AGRICULTURE",
+    image: "/BusinessImages/agriculture.jpg",
+    description:
+      "Empowering agriculture with modern practices to ensure high-yield, sustainable, and ethical farming.",
+    path: "/agriculture",
+  },
+  {
+    title: "ACCESSORIES",
+    image: "/BusinessImages/accessories.jpg",
+    description:
+      "Producing elegant accessories that complement modern lifestyles, combining style with function.",
+    path: "/accessories",
+  },
+
   {
     title: "IT",
     image: "/BusinessImages/it.jpg",
@@ -41,13 +49,7 @@ const businessAreas = [
       "Developing dynamic, sustainable real estate projects that redefine modern living and commercial spaces.",
     path: "/realestate",
   },
-  {
-    title: "AGRICULTURE",
-    image: "/BusinessImages/agriculture.jpg",
-    description:
-      "Empowering agriculture with modern practices to ensure high-yield, sustainable, and ethical farming.",
-    path: "/agriculture",
-  },
+
 ];
 
 const BusinessArenas = () => {
@@ -109,7 +111,7 @@ const BusinessArenas = () => {
       </div>
 
       {/* Cards */}
-      <div className="grid grid-cols-1 gap-8 mx-auto mt-20 md:grid-cols-2 lg:grid-cols-3 max-w-7xl md:p-[5rem] p-[1rem]">
+      <div className="grid grid-cols-1 gap-8 mx-auto mt-20 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl md:p-[5rem] p-[1rem]">
         {businessAreas.map((business, i) => (
           <motion.div
             key={business.title}
