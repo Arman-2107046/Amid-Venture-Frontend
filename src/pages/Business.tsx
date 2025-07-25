@@ -47,7 +47,7 @@ const Business = () => {
       initial={{ opacity: 0, y: -100 }}
       animate={{ opacity: 0.8, y: 0 }}
       transition={{ duration: 1, delay: 0.5 }}
-      className="w-[30vw] sm:w-[28vw] md:w-[25vw] h-auto object-cover"
+      className="w-[30vw] sm:w-[28vw] md:w-[25vw] h-auto object-cover md:mt-[12rem]"
     />
 
     {/* Middle Image */}
@@ -67,7 +67,7 @@ const Business = () => {
       initial={{ opacity: 0, y: -100 }}
       animate={{ opacity: 0.8, y: 0 }}
       transition={{ duration: 1, delay: 1.1 }}
-      className="w-[30vw] sm:w-[28vw] md:w-[25vw] h-auto object-cover"
+      className="w-[30vw] sm:w-[28vw] md:w-[25vw] h-auto object-cover md:mt-[12rem]"
     />
   </div>
 
