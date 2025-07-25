@@ -105,7 +105,7 @@ const Business = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 mx-auto mt-20 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl p-[5rem]">
+        <div className="grid grid-cols-1 gap-8 mx-auto mt-20 md:grid-cols-2 lg:grid-cols-3 max-w-7xl md:p-[5rem] p-[1rem]">
           {businessAreas.map((business, i) => (
             <motion.div
               key={business.title}
