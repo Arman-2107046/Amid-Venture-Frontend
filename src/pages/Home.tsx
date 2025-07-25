@@ -5,32 +5,15 @@ import SlidingGallery from "../components/HomeComponents/SlidingGallery";
 import Navbar from "../components/Navbar";
 import { motion } from "framer-motion";
 import { ArrowRight } from 'lucide-react';
-
-
-// Custom CSS for the liquid glass effect
-const style = document.createElement('style');
-style.innerHTML = `
-  @keyframes liquidGlass {
-    from {
-      background-position: -100% 0;
-    }
-    to {
-      background-position: 100% 0;
-    }
-  }
-  .liquid-glass {
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-    background-size: 200% 100%;
-    animation: liquidGlass 2s ease-in-out infinite;
-  }
-  .group:hover .liquid-glass {
-    animation-play-state: running;
-  }
-`;
-document.head.appendChild(style);
+import { useNavigate } from "react-router-dom";
 
 
 const Home = () => {
+
+  const navigate = useNavigate();
+
+
+
   return (
     <div>
       <Navbar />
@@ -105,15 +88,15 @@ const Home = () => {
       {/* ANCHOR TAG SECTION  */}
 
       <section className="flex justify-center py-8 font-extralight">
-  <a
-    href="/about"
-    className="relative flex items-center text-lg text-gray-800 cursor-pointer select-none group"
-  >
-    Know More About Us
-    <ArrowRight className="w-4 h-4 ml-2 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
-    {/* ultra-thin underline */}
-    <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-gray-800 transition-all duration-500 ease-in-out group-hover:w-full" />
-  </a>
+      <button
+        onClick={() => navigate("/about")}
+        className="relative flex items-center text-lg text-gray-800 bg-transparent border-none outline-none cursor-pointer select-none group"
+      >
+        Know More About Us
+        <ArrowRight className="w-4 h-4 ml-2 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
+        {/* ultra-thin underline */}
+        <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-gray-800 transition-all duration-500 ease-in-out group-hover:w-full" />
+      </button>
 </section>
 
 
