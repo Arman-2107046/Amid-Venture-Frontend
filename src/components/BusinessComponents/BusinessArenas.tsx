@@ -3,7 +3,7 @@
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { Plus } from "lucide-react";
+import { Plus, ArrowRight } from "lucide-react";
 
 const businessAreas = [
   {
@@ -49,7 +49,6 @@ const businessAreas = [
       "Developing dynamic, sustainable real estate projects that redefine modern living and commercial spaces.",
     path: "/realestate",
   },
-
 ];
 
 const BusinessArenas = () => {
@@ -136,6 +135,17 @@ const BusinessArenas = () => {
                   style={{ backgroundImage: `url(${business.image})` }}
                 />
                 <div className="absolute inset-0 transition duration-500 bg-black/20 group-hover:bg-black/40" />
+
+                {/* Arrow Icon on Hover */}
+                <ArrowRight
+                  size={54}
+                  className="absolute text-white transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                  style={{
+                    top: "50%",
+                    left: "50%",
+                    transform: "translate(-50%, -50%)",
+                  }}
+                />
               </div>
 
               <div className="p-6 bg-transparent">

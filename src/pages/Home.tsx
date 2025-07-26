@@ -1,18 +1,20 @@
 import Footer from "../components/Footer";
+import ScrollBackground from "../components/HomeComponents/ScrollBackground";
 // import HeroText from "../components/HomeComponents/HeroText";
 import SlidingGallery from "../components/HomeComponents/SlidingGallery";
 // import HeroHeadline from "../components/HomeComponents/HeroHeadline";
 import Navbar from "../components/Navbar";
 import { motion } from "framer-motion";
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+
+//------------------------------------------------------------
+
+
 
 
 const Home = () => {
-
   const navigate = useNavigate();
-
-
 
   return (
     <div>
@@ -67,8 +69,7 @@ const Home = () => {
       <section className="px-6 py-16 bg-gray-100">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="mb-6 text-4xl font-bold text-gray-800">
-            Amid Venture is fueled by a commitment to
-            global excellence.
+            Amid Venture is fueled by a commitment to global excellence.
           </h1>
           <p className="text-lg font-light leading-relaxed text-gray-600">
             Driven by integrity and innovation, we deliver premium textile
@@ -88,18 +89,21 @@ const Home = () => {
       {/* ANCHOR TAG SECTION  */}
 
       <section className="flex justify-center py-8 font-extralight">
-      <button
-        onClick={() => navigate("/about")}
-        className="relative flex items-center text-lg text-gray-800 bg-transparent border-none outline-none cursor-pointer select-none group"
-      >
-        Know More About Us
-        <ArrowRight className="w-4 h-4 ml-2 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
-        {/* ultra-thin underline */}
-        <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-gray-800 transition-all duration-500 ease-in-out group-hover:w-full" />
-      </button>
-</section>
+        <button
+          onClick={() => navigate("/about")}
+          className="relative flex items-center text-lg text-gray-800 bg-transparent border-none outline-none cursor-pointer select-none group"
+        >
+          Know More About Us
+          <ArrowRight className="w-4 h-4 ml-2 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
+          {/* ultra-thin underline */}
+          <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-gray-800 transition-all duration-500 ease-in-out group-hover:w-full" />
+        </button>
+      </section>
 
 
+      {/* SCROLL BG SECITON  */}
+
+      <ScrollBackground/>
 
       <Footer />
     </div>

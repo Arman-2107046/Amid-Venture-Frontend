@@ -83,7 +83,7 @@ const Apparel = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1, duration: 1 }}
-            className="mt-2 text-6xl font-extrabold tracking-widest text-orange-900 sm:mt-4 sm:text-7xl md:text-9xl"
+            className="mt-2 text-6xl font-extrabold tracking-widest text-black sm:mt-4 sm:text-7xl md:text-9xl"
           >
             APPAREL
           </motion.h2>
@@ -107,7 +107,7 @@ const Apparel = () => {
             Precision - Passion - Purpose
           </p>
           <p className="text-lg font-light leading-relaxed md:text-xl text-slate-700">
-            <span className="font-semibold text-orange-900">AMID APPAREL</span>{" "}
+            <span className="font-semibold text-black">AMID APPAREL</span>{" "}
             is a trusted sourcing partner specializing in a diverse range of
             apparel, from denim, knitwear, woven garments, kidswear, and
             intimatewear to sweaters, formalwear, and sportswear. With a perfect
@@ -142,16 +142,7 @@ const Apparel = () => {
       </section>
 
       <section>
-        {/* <p className="text-lg font-light leading-relaxed md:text-xl text-slate-700">
-          At <span className="font-semibold text-orange-900">AMID APPAREL</span>
-          , denim is more than just fabric — it's a statement of durability,
-          comfort, and timeless style. From rugged workwear to contemporary
-          fashion pieces, our denim collections are crafted with precision,
-          using high-quality materials, sustainable washes, and innovative fits
-          that meet the evolving needs of global markets. Whether it's classic
-          blues or trend-forward silhouettes, our denim tells a story stitched
-          with heritage and modernity.
-        </p> */}
+
 
         <Denim />
       </section>
