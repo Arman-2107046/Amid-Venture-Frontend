@@ -14,7 +14,7 @@ export default function ContactBody() {
       {/* Left Side */}
       <div className="max-w-lg md:flex-1">
         <h2 className="mb-10 text-4xl font-bold leading-tight text-gray-800">
-          Get in Touch <br /> with Amid Venture
+          Our Office <br /> Locations
         </h2>
         <div className="space-y-10 text-sm text-gray-800">
           <div>

@@ -2,16 +2,16 @@ import { motion, useAnimation, useMotionValue } from "framer-motion";
 import { useEffect, useRef, useCallback } from "react";
 
 const images = [
-  "/BusinessImages/denim1.jpg",
-  "/BusinessImages/denim2.jpg",
-  "/BusinessImages/denim3.jpg",
-  "/BusinessImages/denim4.jpg",
-  "/BusinessImages/denim5.jpg",
-  "/BusinessImages/denim6.jpg",
-  "/BusinessImages/denim7.jpg",
-  "/BusinessImages/denim8.jpg",
-  "/BusinessImages/denim9.jpg",
-  "/BusinessImages/denim10.jpg",
+  "/ApparelImages/denim1.jpg",
+  "/ApparelImages/denim2.jpg",
+  "/ApparelImages/denim3.jpg",
+  "/ApparelImages/denim4.jpg",
+  "/ApparelImages/denim5.jpg",
+  "/ApparelImages/denim6.jpg",
+  "/ApparelImages/denim7.jpg",
+  "/ApparelImages/denim8.jpg",
+  "/ApparelImages/denim9.jpg",
+  "/ApparelImages/denim10.jpg",
 ];
 
 export default function Denim() {

@@ -5,17 +5,12 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Denim from "../components/ApparelComponents/Denim";
 import { useNavigate } from "react-router-dom";
-import { ArrowRight } from 'lucide-react';
-
-// import { useEffect } from "react";
-// import { useLocation } from "react-router-dom";
-// ];
+import { ArrowRight } from "lucide-react";
+import ApparelSection from "../components/ApparelComponents/ApparelBodySection";
 
 const Apparel = () => {
-
   const navigate = useNavigate();
 
-  
   const { pathname } = useLocation();
 
   useEffect(() => {
@@ -107,15 +102,38 @@ const Apparel = () => {
             Precision - Passion - Purpose
           </p>
           <p className="text-lg font-light leading-relaxed md:text-xl text-slate-700">
-            <span className="font-semibold text-black">AMID APPAREL</span>{" "}
-            is a trusted sourcing partner specializing in a diverse range of
-            apparel, from denim, knitwear, woven garments, kidswear, and
-            intimatewear to sweaters, formalwear, and sportswear. With a perfect
-            balance of timeless craftsmanship and modern aesthetics, we
-            prioritize premium fabrics, ethical production, and global standards
-            to deliver fashion that’s tailored for leading brands worldwide.
+            <span className="font-semibold text-black">AMID APPAREL</span> is a
+            trusted sourcing partner specializing in a diverse range of apparel,
+            from denim, knitwear, woven garments, kidswear, and intimatewear to
+            sweaters, formalwear, and sportswear. With a perfect balance of
+            timeless craftsmanship and modern aesthetics, we prioritize premium
+            fabrics, ethical production, and global standards to deliver fashion
+            that’s tailored for leading brands worldwide.
           </p>
         </motion.div>
+      </section>
+
+      {/* Intro Apparel Slider  */}
+      <section>
+        <Denim />
+      </section>
+
+      <section className="h-[20vh]">
+  
+  </section>
+      {/* Intro Sourcing  */}
+      <section className="px-6 py-16  mb-[2rem] flex flex-col justify-start">
+        <div className="max-w-4xl mx-auto">
+          <h1 className="mb-6 text-5xl font-bold text-gray-800">
+            Apparel Sourcing
+          </h1>
+         
+        </div>
+      </section>
+
+
+      <section>
+        <ApparelSection />
       </section>
 
       {/* Denim  */}
@@ -142,25 +160,22 @@ const Apparel = () => {
       </section>
 
       <section>
-
-
         <Denim />
       </section>
 
       {/* Button  */}
 
       <section className="flex justify-center py-8 font-extralight">
-      <button
-        onClick={() => navigate("/")}
-        className="relative flex items-center text-lg text-gray-800 bg-transparent border-none outline-none cursor-pointer select-none group"
-      >
-Explore More        <ArrowRight className="w-4 h-4 ml-2 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
-        {/* ultra-thin underline */}
-        <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-gray-800 transition-all duration-500 ease-in-out group-hover:w-full" />
-      </button>
-</section>
-
-
+        <button
+          onClick={() => navigate("/")}
+          className="relative flex items-center text-lg text-gray-800 bg-transparent border-none outline-none cursor-pointer select-none group"
+        >
+          Explore More{" "}
+          <ArrowRight className="w-4 h-4 ml-2 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
+          {/* ultra-thin underline */}
+          <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-gray-800 transition-all duration-500 ease-in-out group-hover:w-full" />
+        </button>
+      </section>
 
       <Footer />
     </div>

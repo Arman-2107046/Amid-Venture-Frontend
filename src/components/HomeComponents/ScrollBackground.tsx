@@ -17,7 +17,7 @@ const ScrollBackground = () => {
   // Red color interpolation (from red-100 → red-500 → red-100)
   const bgColor = useTransform(
     scrollYProgress,
-    [0, 0.25, 0.35, 0.38, 0.66, 0.8, 1],
+    [0, 0.29, 0.35, 0.38, 0.66, 0.8, 1],
     [
       "#FFFFFF", // red-100
       "#FFFFFF", // red-500
@@ -65,8 +65,21 @@ const ScrollBackground = () => {
               />
             </div>
           </div>
+
         </section>
+
+
       </section>
+
+      {/* <section>
+<div className="px-6 py-12 text-center">
+  <h1 className="mb-4 text-3xl font-semibold md:text-4xl">Sustainability at Our Core</h1>
+  <p className="max-w-3xl mx-auto text-base font-light text-gray-700 md:text-lg">
+    We are committed to driving a positive impact through every step of our journey — from ethical sourcing and eco-conscious production to fostering fair partnerships across our supply chain. Our sustainable initiatives are rooted in transparency, innovation, and responsibility, ensuring that our fashion not only looks good but also does good for the <span className="font-medium">Planet</span>, <span className="font-medium">People</span>, and <span className="font-medium">Purpose</span>.
+  </p>
+</div>
+
+</section> */}
     </motion.section>
   );
 };
