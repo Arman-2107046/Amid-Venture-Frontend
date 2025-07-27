@@ -129,12 +129,12 @@ export default function SlidingGallery() {
         {strip.map((src, i) => (
           <div
             key={`${src}-${i}`} // Better key for React reconciliation
-            className="flex-shrink-0 w-[270px] bg-transparent flex items-center"
+            className="flex-shrink-0 w-[270px] bg-transparent flex items-center h-[26rem] width-[22rem]"
           >
             <img
               src={src}
               alt={`Gallery image ${(i % images.length) + 1}`}
-              className="w-full h-auto pointer-events-none select-none "
+              className="object-cover w-full h-full pointer-events-none select-none "
               // onError={(e) => {
               //   // Fallback for missing images
               //   e.currentTarget.src = `https://picsum.photos/270/200?random=${i}`;

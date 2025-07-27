@@ -61,7 +61,7 @@ const Home = () => {
             duration: 1,
           }}
         >
-          {["Weaving", "In EXCELLENCE", "Crafting Beyond", "The BORDERS"].map(
+          {["Thriving ", "In EXCELLENCE", "Expanding", "The HORIZON"].map(
             (line, i) => (
               <div
                 key={i}
@@ -76,26 +76,6 @@ const Home = () => {
 
         {/* <HeroText/> */}
       </header>
-
-      {/* IntroText  */}
-      {/* <section className="px-6 py-16 bg-gray-100 mb-[2rem]">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="mb-6 text-4xl font-bold text-gray-800">
-            Shaping Global Trade with Versatility and Vision
-          </h1>
-          <p className="text-lg font-light leading-relaxed text-gray-600">
-            Amid Venture stands at the forefront of global commerce, delivering
-            excellence across six dynamic sectors, Apparel, Food, Agriculture,
-            Accessories, IT, and Real Estate. Our commitment to quality,
-            innovation, and ethical practices drives every project, from
-            crafting premium fashion garments to enabling smart digital
-            transformation and sustainable farming. With a focus on trust,
-            craftsmanship, and long-term value, Amid Venture is not just a
-            service provider, we are a strategic partner in building a more
-            connected and future-ready world.
-          </p>
-        </div>
-      </section> */}
 
       <section className="px-6 py-10 bg-gray-100 md:py-12">
         <div className="max-w-5xl mx-auto text-left">
@@ -146,7 +126,7 @@ const Home = () => {
         </button>
       </section>
 
-      <section className="px-6 py-20 bg-white md:py-28">
+      <section className="px-6 mt-10 bg-white">
         <div className="max-w-5xl mx-auto text-left">
           <h1 className="text-3xl font-semibold leading-snug text-gray-900 md:text-5xl md:leading-tight">
             Amid Apparel Sourcing
@@ -176,21 +156,30 @@ const Home = () => {
       {/* APPAREL GRID  */}
 
       <section className="lg:mt-[4rem] px-6 py-16 bg-white text-slate-800">
-        {/* <div className="max-w-6xl mx-auto text-center">
-          <h1 className="mb-6 text-4xl font-bold">Amid Apparel Sourcing</h1>
-          <p className="mb-12 text-lg font-light leading-relaxed text-gray-600">
-            At Amid Venture, our Apparel Sourcing division is dedicated to
-            delivering high-quality fashion products through a streamlined and
-            reliable global supply chain. We specialize in sourcing a wide range
-            of garments, from casualwear and formalwear to denim, knitwear,
-            activewear, and children’s clothing. With a strong network of
-            certified manufacturers, stringent quality control, and a focus on
-            sustainability, we ensure timely delivery, ethical production, and
-            superior craftsmanship.
-          </p>
-        </div> */}
-
         <SlidingGallery />
+
+        <section className="px-6 py-16 bg-white text-slate-900 md:py-24">
+  <div className="max-w-5xl mx-auto">
+    <h1 className="mb-6 text-4xl font-semibold leading-tight md:text-6xl">
+      Explore Our <br /> Production Line
+    </h1>
+    <p className="max-w-2xl text-base font-light md:text-lg text-slate-700">
+      Precision, consistency, and craftsmanship define our process. From yarn to final stitch, every stage is optimized to meet global standards while preserving local values.
+    </p>
+    {/* <Link to="/production">
+      <section className="mt-6 font-extralight">
+        <button
+          onClick={() => navigate("/production")}
+          className="relative flex items-center text-lg text-gray-800 bg-transparent border-none outline-none cursor-pointer select-none group"
+        >
+          Explore the Line
+          <ArrowRight className="w-4 h-4 ml-2 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
+          <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-gray-800 transition-all duration-500 ease-in-out group-hover:w-full" />
+        </button>
+      </section>
+    </Link> */}
+  </div>
+</section>
 
         {/* Product Categories Grid */}
         <ApparelBodySection />
