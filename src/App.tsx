@@ -20,6 +20,7 @@ import Food from "./pages/Food";
 import Accessories from "./pages/Accessories";
 import Agriculture from "./pages/Agriculture";
 import RealEstate from "./pages/RealEstate";
+import Knitwear from "./pages/ApparelSubpages/Knitwear";
 
 
 
@@ -48,6 +49,10 @@ const App = () => {
         <Route path="/it" element={<IT />} />
         <Route path="/realestate" element={<RealEstate />} />
         <Route path="/agriculture" element={<Agriculture />} />
+
+        {/* APPAREL SUBPAGES  */}
+
+<Route path='/knitwear' element={<Knitwear/>} />
       </Routes>
     </Router>
   );

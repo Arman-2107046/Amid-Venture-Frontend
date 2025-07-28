@@ -123,7 +123,7 @@ export default function Denim() {
         {strip.map((src, i) => (
           <div
             key={`${src}-${i}`} // Better key for React reconciliation
-            className="flex-shrink-0 w-[270px] bg-transparent flex items-center"
+            className="flex-shrink-0 bg-transparent flex items-center h-[26rem] w-[22rem] "
           >
             <img
               src={src}

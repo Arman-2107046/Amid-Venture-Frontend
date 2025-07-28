@@ -164,14 +164,28 @@ const SustainabilityImage = () => {
   return (
     <div className="relative h-[90vh] w-full overflow-hidden">
       {/* Global background image when hovered */}
-      {hovered !== null && (
-        <img
-          src={activeImage!}
-          alt="Hovered Background"
-          className="absolute inset-0 z-0 object-cover w-full h-full transition-opacity duration-500"
-        />
-      )}
-
+     {/* PREMIUM GLOBAL BACKGROUND ------------------------------------------------ */}
+<motion.div
+  className="absolute inset-0 z-0 overflow-hidden"
+  initial={{ opacity: 0 }}
+  animate={{ opacity: hovered !== null ? 1 : 0 }}
+  transition={{ duration: 0.9, ease: [0.25, 1, 0.5, 1] }}
+>
+  <motion.img
+  key={activeImage}
+    src={activeImage || ""}
+    alt="Hovered background"
+    className="absolute inset-0 object-cover w-full h-full"
+    initial={{ scale: 1.05, filter: "brightness(0.55)" }}
+    animate={{
+      scale: hovered !== null ? 1 : 1.05,
+      filter: hovered !== null ? "brightness(0.75)" : "brightness(0.55)",
+    }}
+    transition={{ duration: 1.4, ease: "easeOut" }}
+  />
+  {/* subtle vignette */}
+  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+</motion.div>
       {/* Overlay for darkening */}
       <div className="absolute inset-0 z-10 bg-black/40" />
 
@@ -214,7 +228,7 @@ const SustainabilityImage = () => {
                 <img
                   src={section.image}
                   alt={section.title}
-                  className="absolute inset-0 z-0 object-cover w-full h-full"
+                  className="absolute inset-0 z-0 object-cover w-full h-full " 
                 />
               )}
 

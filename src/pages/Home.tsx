@@ -108,7 +108,7 @@ const Home = () => {
       </section>
 
       {/* Business Slider  */}
-      <section className="">
+      <section className="mt-[2rem]">
         <BusinessSlider />
       </section>
 
