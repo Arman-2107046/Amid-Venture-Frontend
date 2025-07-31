@@ -1,377 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect ,useState } from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
-import {KnitwearImages} from "../../Database/ApparelDB";
-
-// interface ImageItem {
-//   src: string;
-//   gender: "Men" | "Women" | "Kids";
-//   category: string;
-// }
-
-// const KnitwearImages: ImageItem[] = [
-//   {
-//     src: "/ApparelImages/t-shirt1.jpg",
-//     gender: "Men",
-//     category: "T-Shirt",
-//   },
-//   {
-//     src: "/ApparelImages/t-shirt2.jpg",
-//     gender: "Men",
-//     category: "T-Shirt",
-//   },
-//   {
-//     src: "/ApparelImages/t-shirt3.jpg",
-//     gender: "Women",
-//     category: "T-Shirt",
-//   },
-//   {
-//     src: "/ApparelImages/t-shirt4.jpg",
-//     gender: "Women",
-//     category: "T-Shirt",
-//   },
-//   {
-//     src: "/ApparelImages/t-shirt5.jpg",
-//     gender: "Kids",
-//     category: "T-Shirt",
-//   },
-//   {
-//     src: "/ApparelImages/t-shirt6.jpg",
-//     gender: "Kids",
-//     category: "T-Shirt",
-//   },
-//   {
-//     src: "/ApparelImages/polo-shirt1.jpg",
-//     gender: "Men",
-//     category: "Polo Shirt",
-//   },
-//   {
-//     src: "/ApparelImages/polo-shirt2.jpg",
-//     gender: "Men",
-//     category: "Polo Shirt",
-//   },
-//   {
-//     src: "/ApparelImages/polo-shirt3.jpg",
-//     gender: "Women",
-//     category: "Polo Shirt",
-//   },
-//   {
-//     src: "/ApparelImages/polo-shirt4.jpg",
-//     gender: "Women",
-//     category: "Polo Shirt",
-//   },
-//   {
-//     src: "/ApparelImages/polo-shirt5.jpg",
-//     gender: "Kids",
-//     category: "Polo Shirt",
-//   },
-//   {
-//     src: "/ApparelImages/polo-shirt6.jpg",
-//     gender: "Kids",
-//     category: "Polo Shirt",
-//   },
-//   {
-//     src: "/ApparelImages/henley-shirt1.jpg",
-//     gender: "Men",
-//     category: "Henley Shirt",
-//   },
-//   {
-//     src: "/ApparelImages/henley-shirt2.jpg",
-//     gender: "Men",
-//     category: "Henley Shirt",
-//   },
-//   {
-//     src: "/ApparelImages/henley-shirt3.jpg",
-//     gender: "Women",
-//     category: "Henley Shirt",
-//   },
-//   {
-//     src: "/ApparelImages/henley-shirt4.jpg",
-//     gender: "Women",
-//     category: "Henley Shirt",
-//   },
-//   {
-//     src: "/ApparelImages/henley-shirt5.jpg",
-//     gender: "Kids",
-//     category: "Henley Shirt",
-//   },
-//   {
-//     src: "/ApparelImages/henley-shirt6.jpg",
-//     gender: "Kids",
-//     category: "Henley Shirt",
-//   },
-//   {
-//     src: "/ApparelImages/raglan1.jpg",
-//     gender: "Men",
-//     category: "Raglan",
-//   },
-//   {
-//     src: "/ApparelImages/raglan2.jpg",
-//     gender: "Men",
-//     category: "Raglan",
-//   },
-//   {
-//     src: "/ApparelImages/raglan3.jpg",
-//     gender: "Women",
-//     category: "Raglan",
-//   },
-//   {
-//     src: "/ApparelImages/raglan4.jpg",
-//     gender: "Women",
-//     category: "Raglan",
-//   },
-//   {
-//     src: "/ApparelImages/raglan5.jpg",
-//     gender: "Kids",
-//     category: "Raglan",
-//   },
-//   {
-//     src: "/ApparelImages/raglan6.jpg",
-//     gender: "Kids",
-//     category: "Raglan",
-//   },
-//   {
-//     src: "/ApparelImages/hoodie1.jpg",
-//     gender: "Men",
-//     category: "Hoodie",
-//   },
-//   {
-//     src: "/ApparelImages/hoodie2.jpg",
-//     gender: "Men",
-//     category: "Hoodie",
-//   },
-//   {
-//     src: "/ApparelImages/hoodie3.jpg",
-//     gender: "Women",
-//     category: "Hoodie",
-//   },
-//   {
-//     src: "/ApparelImages/hoodie4.jpg",
-//     gender: "Women",
-//     category: "Hoodie",
-//   },
-//   {
-//     src: "/ApparelImages/hoodie5.jpg",
-//     gender: "Kids",
-//     category: "Hoodie",
-//   },
-//   {
-//     src: "/ApparelImages/hoodie6.jpg",
-//     gender: "Kids",
-//     category: "Hoodie",
-//   },
-//   {
-//     src: "/ApparelImages/sweat-shirt1.jpg",
-//     gender: "Men",
-//     category: "SweatShirt/Half Zip",
-//   },
-//   {
-//     src: "/ApparelImages/sweat-shirt2.jpg",
-//     gender: "Men",
-//     category: "SweatShirt/Half Zip",
-//   },
-//   {
-//     src: "/ApparelImages/sweat-shirt3.jpg",
-//     gender: "Women",
-//     category: "SweatShirt/Half Zip",
-//   },
-//   {
-//     src: "/ApparelImages/sweat-shirt4.jpg",
-//     gender: "Women",
-//     category: "SweatShirt/Half Zip",
-//   },
-//   {
-//     src: "/ApparelImages/sweat-shirt5.jpg",
-//     gender: "Kids",
-//     category: "SweatShirt/Half Zip",
-//   },
-//   {
-//     src: "/ApparelImages/sweat-shirt6.jpg",
-//     gender: "Kids",
-//     category: "SweatShirt/Half Zip",
-//   },
-//   {
-//     src: "/ApparelImages/nightwear1.jpg",
-//     gender: "Men",
-//     category: "Nightwear",
-//   },
-//   {
-//     src: "/ApparelImages/nightwear2.jpg",
-//     gender: "Men",
-//     category: "Nightwear",
-//   },
-//   {
-//     src: "/ApparelImages/nightwear3.jpg",
-//     gender: "Women",
-//     category: "Nightwear",
-//   },
-//   {
-//     src: "/ApparelImages/nightwear4.jpg",
-//     gender: "Women",
-//     category: "Nightwear",
-//   },
-//   {
-//     src: "/ApparelImages/nightwear5.jpg",
-//     gender: "Kids",
-//     category: "Nightwear",
-//   },
-//   {
-//     src: "/ApparelImages/nightwear6.jpg",
-//     gender: "Kids",
-//     category: "Nightwear",
-//   },
-//   {
-//     src: "/ApparelImages/shortpants1.jpg",
-//     gender: "Men",
-//     category: "ShortPants",
-//   },
-//   {
-//     src: "/ApparelImages/shortpants2.jpg",
-//     gender: "Men",
-//     category: "ShortPants",
-//   },
-//   {
-//     src: "/ApparelImages/shortpants3.jpg",
-//     gender: "Women",
-//     category: "ShortPants",
-//   },
-//   {
-//     src: "/ApparelImages/shortpants4.jpg",
-//     gender: "Women",
-//     category: "ShortPants",
-//   },
-//   {
-//     src: "/ApparelImages/shortpants5.jpg",
-//     gender: "Kids",
-//     category: "ShortPants",
-//   },
-//   {
-//     src: "/ApparelImages/shortpants6.jpg",
-//     gender: "Kids",
-//     category: "ShortPants",
-//   },
-//   {
-//     src: "/ApparelImages/jogger1.jpg",
-//     gender: "Men",
-//     category: "Jogger",
-//   },
-//   {
-//     src: "/ApparelImages/jogger2.jpg",
-//     gender: "Men",
-//     category: "Jogger",
-//   },
-//   {
-//     src: "/ApparelImages/jogger3.jpg",
-//     gender: "Women",
-//     category: "Jogger",
-//   },
-//   {
-//     src: "/ApparelImages/jogger4.jpg",
-//     gender: "Women",
-//     category: "Jogger",
-//   },
-//   {
-//     src: "/ApparelImages/jogger5.jpg",
-//     gender: "Kids",
-//     category: "Jogger",
-//   },
-//   {
-//     src: "/ApparelImages/jogger6.jpg",
-//     gender: "Kids",
-//     category: "Jogger",
-//   },
-//   {
-//     src: "/ApparelImages/trouser1.jpg",
-//     gender: "Men",
-//     category: "Trouser",
-//   },
-//   {
-//     src: "/ApparelImages/trouser2.jpg",
-//     gender: "Men",
-//     category: "Trouser",
-//   },
-//   {
-//     src: "/ApparelImages/trouser3.jpg",
-//     gender: "Women",
-//     category: "Trouser",
-//   },
-//   {
-//     src: "/ApparelImages/trouser4.jpg",
-//     gender: "Women",
-//     category: "Trouser",
-//   },
-//   {
-//     src: "/ApparelImages/trouser5.jpg",
-//     gender: "Kids",
-//     category: "Trouser",
-//   },
-//   {
-//     src: "/ApparelImages/trouser6.jpg",
-//     gender: "Kids",
-//     category: "Trouser",
-//   },
-//   {
-//     src: "/ApparelImages/leggings1.jpg",
-//     gender: "Women",
-//     category: "Leggings",
-//   },
-//   {
-//     src: "/ApparelImages/leggings2.jpg",
-//     gender: "Women",
-//     category: "Leggings",
-//   },
-//   // {
-//   //   src: "/ApparelImages/leggings3.jpg",
-//   //   gender: "Women",
-//   //   category: "Leggings",
-//   // },
-//   // {
-//   //   src: "/ApparelImages/leggings4.jpg",
-//   //   gender: "Women",
-//   //   category: "Leggings",
-//   // },
-//   // {
-//   //   src: "/ApparelImages/leggings5.jpg",
-//   //   gender: "Kids",
-//   //   category: "Leggings",
-//   // },
-//   // {
-//   //   src: "/ApparelImages/leggings6.jpg",
-//   //   gender: "Kids",
-//   //   category: "Leggings",
-//   // },
-//   {
-//     src: "/ApparelImages/dress1.jpg",
-//     gender: "Women",
-//     category: "Dress",
-//   },
-//   {
-//     src: "/ApparelImages/dress2.jpg",
-//     gender: "Women",
-//     category: "Dress",
-//   },
-//   // {
-//   //   src: "/ApparelImages/dress3.jpg",
-//   //   gender: "Women",
-//   //   category: "Dress",
-//   // },
-//   // {
-//   //   src: "/ApparelImages/dress4.jpg",
-//   //   gender: "Women",
-//   //   category: "Dress",
-//   // },
-//   // {
-//   //   src: "/ApparelImages/dress5.jpg",
-//   //   gender: "Kids",
-//   //   category: "Dress",
-//   // },
-//   // {
-//   //   src: "/ApparelImages/dress6.jpg",
-//   //   gender: "Kids",
-//   //   category: "Dress",
-//   // },
-// ];
+import { KnitwearImages } from "../../Database/ApparelDB";
+import ApparelInquiry from "../../components/GlobalComponents/ApparelInquiry";
+import { useLocation } from "react-router-dom";
 
 const categories = [
   "T-Shirt",
@@ -390,7 +23,7 @@ const categories = [
 
 const genders = ["Men", "Women", "Kids"];
 
-const KnitwearPage: React.FC = () => {
+const Knitwear: React.FC = () => {
   const [selectedGenders, setSelectedGenders] = useState<string[]>([]);
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
 
@@ -418,23 +51,37 @@ const KnitwearPage: React.FC = () => {
     return genderMatch && categoryMatch;
   });
 
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+
   return (
     <main className="">
       <Navbar />
 
-      {/* Hero Section  */}
-      <header className="relative h-[60vh] overflow-hidden bg-stone-200">
-        <div className="relative z-10 flex flex-col items-start justify-center h-full px-6 font-roboto pt-[4rem] sm:pt-[8rem] pl-[2rem] sm:pl-[4rem]">
-          <h1 className="mb-4 text-4xl font-bold text-gray-900 sm:text-6xl ">
+      <header className="relative h-[80vh] overflow-hidden bg-stone-200">
+        {/* Background Image */}
+        <img
+          src="/ApparelImages/HeroImages/knit-hero.jpg" 
+          alt="Premium Knitwear"
+          className="absolute inset-0 object-cover w-full h-full"
+        />
+
+        {/* Optional dark overlay for text visibility */}
+        <div className="absolute inset-0 bg-black/20" />
+
+        {/* Text Content */}
+        <div className="relative z-10 flex flex-col items-start justify-center h-full px-6 font-roboto pt-[4rem] sm:pt-[8rem] pl-[2rem] sm:pl-[4rem] text-white">
+          <h1 className="mb-4 text-4xl font-bold sm:text-6xl">
             Discover Premium Knitwear
           </h1>
-          <p className="max-w-xl mb-6 text-lg text-gray-700 sm:text-xl ">
+          <p className="max-w-xl mb-6 text-lg sm:text-xl">
             Experience the perfect blend of comfort, warmth, and timeless
             fashion with our high-quality knitwear collection.
           </p>
-          {/* <button className="px-6 py-3 text-sm text-white transition-all bg-black rounded-lg sm:text-base hover:bg-gray-800">
-      Explore Collection
-    </button> */}
         </div>
       </header>
 
@@ -499,9 +146,13 @@ const KnitwearPage: React.FC = () => {
         </div>
       </section>
 
+      <section>
+        <ApparelInquiry />
+      </section>
+
       <Footer />
     </main>
   );
 };
 
-export default KnitwearPage;
+export default Knitwear;

@@ -12,22 +12,10 @@
 
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto",'Cinzel' ,sans-serif;
 }
   
 
-@keyframes slideIn {
-  from {
-    transform: translateY(100%);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
-
-.animate-slideIn {
-  animation: slideIn 1s ease-out forwards;
-}
 
 
 

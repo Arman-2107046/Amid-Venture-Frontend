@@ -9,6 +9,7 @@ export default {
             fontFamily: {
                 ibm: ['"IBM Plex Sans Condensed"', 'sans-serif'],
                 roboto: ['"Roboto"', 'sans-serif'],
+                cinzel: ['"Cinzel"', 'serif'], // ✅ Added Cinzel font
             },
         },
     },
