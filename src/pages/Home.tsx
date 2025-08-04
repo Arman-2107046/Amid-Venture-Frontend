@@ -159,27 +159,17 @@ const Home = () => {
         <SlidingGallery />
 
         <section className="px-6 py-16 bg-white text-slate-900 md:py-24">
-  <div className="max-w-5xl mx-auto">
-    <h1 className="mb-6 text-4xl font-semibold leading-tight md:text-6xl">
-      Explore Our <br /> Production Line
-    </h1>
-    <p className="max-w-2xl text-base font-light md:text-lg text-slate-700">
-      Precision, consistency, and craftsmanship define our process. From yarn to final stitch, every stage is optimized to meet global standards while preserving local values.
-    </p>
-    {/* <Link to="/production">
-      <section className="mt-6 font-extralight">
-        <button
-          onClick={() => navigate("/production")}
-          className="relative flex items-center text-lg text-gray-800 bg-transparent border-none outline-none cursor-pointer select-none group"
-        >
-          Explore the Line
-          <ArrowRight className="w-4 h-4 ml-2 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
-          <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-gray-800 transition-all duration-500 ease-in-out group-hover:w-full" />
-        </button>
-      </section>
-    </Link> */}
-  </div>
-</section>
+          <div className="max-w-5xl mx-auto">
+            <h1 className="mb-6 text-4xl font-semibold leading-tight md:text-6xl">
+              Explore Our <br /> Production Line
+            </h1>
+            <p className="max-w-2xl text-base font-light md:text-lg text-slate-700">
+              Precision, consistency, and craftsmanship define our process. From
+              yarn to final stitch, every stage is optimized to meet global
+              standards while preserving local values.
+            </p>
+          </div>
+        </section>
 
         {/* Product Categories Grid */}
         <ApparelBodySection />

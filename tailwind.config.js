@@ -10,6 +10,7 @@ export default {
                 ibm: ['"IBM Plex Sans Condensed"', 'sans-serif'],
                 roboto: ['"Roboto"', 'sans-serif'],
                 cinzel: ['"Cinzel"', 'serif'], // ✅ Added Cinzel font
+                dmSerifText: ['"DM Serif Text"', 'serif'], // ✅ Added DM Serif Text font
             },
         },
     },
