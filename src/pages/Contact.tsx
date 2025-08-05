@@ -24,7 +24,7 @@ const Contact = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="relative z-10 flex flex-col items-start justify-end h-full p-2 text-left text-stone-200 sm:p-10 lg:p-20"
         >
-          <h1 className="mb-4 text-3xl leading-tight tracking-tight sm:text-4xl lg:text-5xl font-dmSerifText">
+          <h1 className="mb-4 text-3xl leading-tight tracking-tight sm:text-4xl lg:text-5xl">
             Get In Touch With <br />{" "}
             <span className="uppercase">amid venture</span>
           </h1>
