@@ -162,30 +162,30 @@ const SustainabilityImage = () => {
   };
 
   return (
-    <div className="relative h-[90vh] w-full overflow-hidden">
+    <div className="relative h-[75vh] w-full overflow-hidden">
       {/* Global background image when hovered */}
-     {/* PREMIUM GLOBAL BACKGROUND ------------------------------------------------ */}
-<motion.div
-  className="absolute inset-0 z-0 overflow-hidden"
-  initial={{ opacity: 0 }}
-  animate={{ opacity: hovered !== null ? 1 : 0 }}
-  transition={{ duration: 0.9, ease: [0.25, 1, 0.5, 1] }}
->
-  <motion.img
-  key={activeImage}
-    src={activeImage || ""}
-    alt="Hovered background"
-    className="absolute inset-0 object-cover w-full h-full"
-    initial={{ scale: 1.05, filter: "brightness(0.55)" }}
-    animate={{
-      scale: hovered !== null ? 1 : 1.05,
-      filter: hovered !== null ? "brightness(0.75)" : "brightness(0.55)",
-    }}
-    transition={{ duration: 1.4, ease: "easeOut" }}
-  />
-  {/* subtle vignette */}
-  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-</motion.div>
+      {/* PREMIUM GLOBAL BACKGROUND ------------------------------------------------ */}
+      <motion.div
+        className="absolute inset-0 z-0 overflow-hidden"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: hovered !== null ? 1 : 0 }}
+        transition={{ duration: 0.9, ease: [0.25, 1, 0.5, 1] }}
+      >
+        <motion.img
+          key={activeImage}
+          src={activeImage || ""}
+          alt="Hovered background"
+          className="absolute inset-0 object-cover w-full h-full"
+          initial={{ scale: 1.05, filter: "brightness(0.55)" }}
+          animate={{
+            scale: hovered !== null ? 1 : 1.05,
+            filter: hovered !== null ? "brightness(0.75)" : "brightness(0.55)",
+          }}
+          transition={{ duration: 1.4, ease: "easeOut" }}
+        />
+        {/* subtle vignette */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+      </motion.div>
       {/* Overlay for darkening */}
       <div className="absolute inset-0 z-10 bg-black/40" />
 
@@ -228,13 +228,13 @@ const SustainabilityImage = () => {
                 <img
                   src={section.image}
                   alt={section.title}
-                  className="absolute inset-0 z-0 object-cover w-full h-full " 
+                  className="absolute inset-0 z-0 object-cover w-full h-full "
                 />
               )}
 
               {/* Title and drawer container */}
               <div className="relative z-10 flex flex-col items-center justify-end w-full h-full pb-8">
-                <h2 className="text-3xl font-semibold text-gray-200 lg:mb-5">
+                <h2 className="text-3xl font-light text-gray-200 lg:mb-5 font-dmSerifText">
                   {section.title}
                 </h2>
 
@@ -248,24 +248,22 @@ const SustainabilityImage = () => {
                       transition={{ duration: 0.7 }}
                       className="absolute bottom-0 left-0 right-0 z-30 p-6 bg-white/90 backdrop-blur-md h-[30%] flex flex-col justify-center"
                     >
-                      <h1 className="text-3xl font-semibold lg:mb-5 md:mb-3">
+                      <h1 className="text-3xl font-light lg:mb-5 md:mb-3 font-dmSerifText">
                         {section.title}
                       </h1>
                       <p className="text-sm font-light text-gray-800 lg:mb-4 md:mb-2">
                         {section.description}
                       </p>
 
-
                       <section>
-                      <button
-                        onClick={() => navigate("/sustainability")}
-                        className="relative flex items-center text-sm text-gray-800 bg-transparent border-none outline-none cursor-pointer select-none group font-extralight"
-                      >
-                        Know More
-                        <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-gray-800 transition-all duration-500 ease-in-out group-hover:w-full md:text-md" />
-                      </button>
+                        <button
+                          onClick={() => navigate("/sustainability")}
+                          className="relative flex items-center text-sm text-gray-800 bg-transparent border-none outline-none cursor-pointer select-none group font-extralight"
+                        >
+                          Know More
+                          <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-gray-800 transition-all duration-500 ease-in-out group-hover:w-full md:text-md" />
+                        </button>
                       </section>
-                  
                     </motion.div>
                   )}
                 </AnimatePresence>

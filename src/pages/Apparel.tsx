@@ -40,8 +40,8 @@ const Apparel = () => {
           }}
           className="text-center lg:mt-[5rem]"
         >
-          <h1 className="text-4xl font-extrabold tracking-wide sm:text-5xl lg:text-7xl font-cinzel">
-            AMID APPAREL
+          <h1 className="text-4xl font-light tracking-wide sm:text-5xl lg:text-7xl font-dmSerifText">
+            AMID SOURCING
           </h1>
         </motion.div>
 
@@ -100,7 +100,7 @@ const Apparel = () => {
           transition={{ duration: 1 }}
           className="max-w-4xl mx-auto text-left"
         >
-          <h2 className="mb-4 text-4xl font-bold leading-tight tracking-tight md:text-5xl font-dmSerifText">
+          <h2 className="mb-4 text-4xl font-light leading-tight tracking-tight md:text-5xl font-dmSerifText">
             Redefining Elegance in Apparel
           </h2>
           <p className="mb-6 text-xl md:text-2xl text-slate-600">
@@ -131,7 +131,7 @@ const Apparel = () => {
           transition={{ duration: 1 }}
           className="max-w-4xl mx-auto text-left"
         >
-          <h2 className="mb-4 text-4xl font-bold leading-tight tracking-tight md:text-5xl font-dmSerifText">
+          <h2 className="mb-4 text-4xl font-light leading-tight tracking-tight md:text-5xl font-dmSerifText">
             Apparel Sourcing
           </h2>
 
@@ -158,7 +158,7 @@ const Apparel = () => {
           transition={{ duration: 1 }}
           className="max-w-4xl mx-auto text-left"
         >
-          <h2 className="mb-4 text-4xl font-semibold leading-tight tracking-tight md:text-5xl font-dmSerifText">
+          <h2 className="mb-4 text-4xl font-light leading-tight tracking-tight md:text-5xl font-dmSerifText">
             Our Process
           </h2>
 
@@ -191,7 +191,7 @@ const Apparel = () => {
 
         {/* Overlay */}
         <div className="relative z-10 flex flex-col items-start justify-center h-full px-10 text-white bg-black/40">
-          <h2 className="mb-4 text-3xl md:text-5xl">Our Process</h2>
+          <h2 className="mb-4 text-3xl font-light md:text-5xl font-dmSerifText">Our Process</h2>
           <p className="max-w-2xl mb-6 font-light text-md md:text-lg">
             From design development and fabric sourcing to production, quality
             control, and global shipping our process ensures that every garment
@@ -218,9 +218,9 @@ const Apparel = () => {
 
       <section className="px-6 py-16 bg-white text-slate-900 md:pt-[5rem] md:mt-[3rem]">
         <div className="max-w-5xl mx-auto">
-          <h1 className="mb-6 text-4xl font-semibold leading-tight md:text-6xl">
+          <h1 className="mb-6 text-4xl font-light leading-tight md:text-6xl font-dmSerifText">
             Get In Touch <br />
-            With <span className="font-semibold uppercase"> AMID VENTURE</span>
+            With <span className="uppercase"> AMID VENTURE</span>
           </h1>
           <p className="max-w-2xl text-base font-light md:text-lg text-slate-700">
             We're here to connect. Whether you're a brand, a buyer, or a

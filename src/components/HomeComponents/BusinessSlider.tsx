@@ -5,49 +5,49 @@ import { Plus, ArrowRight } from "lucide-react";
 
 const businessAreas = [
   {
-    title: "APPAREL",
-    image: "/BusinessImages/apparel.jpg",
+    title: "AMID SOURCING",
+    image: "/BusinessImages/sourcing2.jpg",
     description:
       "Crafting high-quality fashion garments with refined design and superior stitching for global retailers.",
     path: "/apparel",
   },
+  // {
+  //   title: "AMID FOOD",
+  //   image: "/BusinessImages/food2.jpg",
+  //   description:
+  //     "Delivering fresh, quality-assured food products with a focus on safety, taste, and sustainability.",
+  //   path: "/food",
+  // },
   {
-    title: "FOOD",
-    image: "/BusinessImages/food.jpg",
-    description:
-      "Delivering fresh, quality-assured food products with a focus on safety, taste, and sustainability.",
-    path: "/food",
-  },
-  {
-    title: "AGRICULTURE",
-    image: "/BusinessImages/agriculture.jpg",
+    title: "AMID AGRICULTURE",
+    image: "/BusinessImages/agriculture3.jpg",
     description:
       "Empowering agriculture with modern practices to ensure high-yield, sustainable, and ethical farming.",
     path: "/agriculture",
   },
   {
-    title: "ACCESSORIES",
-    image: "/BusinessImages/accessories.jpg",
+    title: "AMID DESIGN STUDIO",
+    image: "/BusinessImages/design.jpg",
     description:
       "Producing elegant accessories that complement modern lifestyles, combining style with function.",
     path: "/accessories",
   },
+
   {
-    title: "IT",
+    title: "AMID IT VENTURE",
     image: "/BusinessImages/it.jpg",
     description:
       "Providing innovative IT solutions, from software development to digital transformation and automation.",
     path: "/it",
   },
   {
-    title: "REAL ESTATE",
+    title: " AMID INVESTMENTS",
     image: "/BusinessImages/realestate.jpg",
     description:
       "Developing dynamic, sustainable real estate projects that redefine modern living and commercial spaces.",
     path: "/realestate",
   },
 ];
-
 const BusinessSlider = () => {
   const navigate = useNavigate();
   const [cursor, setCursor] = useState({ x: 0, y: 0 });
@@ -198,7 +198,7 @@ const BusinessSlider = () => {
                 />
               </div>
               <div className="p-4 bg-transparent">
-                <h3 className="text-xl font-semibold text-center text-gray-900">
+                <h3 className="text-xl font-light text-center text-gray-900 font-dmSerifText">
                   {business.title}
                 </h3>
               </div>

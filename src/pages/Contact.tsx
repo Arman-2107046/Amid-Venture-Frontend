@@ -24,7 +24,7 @@ const Contact = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="relative z-10 flex flex-col items-start justify-end h-full p-2 text-left text-stone-200 sm:p-10 lg:p-20"
         >
-          <h1 className="mb-4 text-3xl leading-tight tracking-tight sm:text-4xl lg:text-5xl">
+          <h1 className="mb-4 text-3xl font-extralight sm:text-4xl lg:text-5xl font-dmSerifText">
             Get In Touch With <br />{" "}
             <span className="uppercase">amid venture</span>
           </h1>
@@ -37,7 +37,7 @@ const Contact = () => {
 
       <section className="bg-stone-50">
         <div className="max-w-3xl px-4 py-10 mx-auto text-center sm:px-8 md:px-16 lg:px-24 xl:px-32 md:pt-[4rem]">
-          <h2 className="text-3xl font-bold text-stone-800 sm:text-4xl md:text-5xl">
+          <h2 className="text-3xl font-light text-stone-800 sm:text-4xl md:text-5xl font-dmSerifText">
             Partner With Us
           </h2>
           <p className="mt-4 text-base text-stone-800 sm:text-lg">
@@ -51,62 +51,6 @@ const Contact = () => {
         <ContactForm />
       </section>
 
-      {/* 
-      <section className="px-6 py-24 bg-slate-100">
-        <div className="grid items-start grid-cols-1 gap-16 mx-auto max-w-7xl md:grid-cols-2">
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="space-y-8 text-gray-700"
-          >
-            <h2 className="text-4xl font-semibold text-gray-800">
-              Contact Information
-            </h2>
-
-            <p className="text-lg text-gray-600">
-              For inquiries or more information about our products and services,
-              please use the contact details below or fill out the form.
-            </p>
-
-            <div className="space-y-6">
-              <div className="flex items-start gap-4">
-                <Mail className="mt-1 text-slate-900" />
-                <div>
-                  <p className="text-sm text-gray-500">Email</p>
-                  <p className="text-lg font-medium text-gray-800">
-                    mosharraf@cottonworldsourcing.com
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <Phone className="mt-1 text-slate-900" />
-                <div>
-                  <p className="text-sm text-gray-500">Phone</p>
-                  <p className="text-lg font-medium text-gray-800">
-                    +880 1611-419402, +880 1309-950194
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <MapPin className="mt-1 text-slate-900" />
-                <div>
-                  <p className="text-sm text-gray-500">Address</p>
-                  <address className="text-lg not-italic font-medium text-gray-800">
-                    Uttara sector 13, Road- 17<br />
-                    Dhaka, Bangladesh
-                  </address>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-
-
-        </div>
-      </section> */}
 
       {/* location  */}
       <section className="px-6 py-20 border-t border-gray-200 bg-stone-100">
@@ -118,7 +62,7 @@ const Contact = () => {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <h3 className="text-3xl font-semibold text-stone-800 md:text-4xl">
+            <h3 className="text-3xl font-light text-stone-800 md:text-4xl font-dmSerifText">
               Get In Touch{" "}
             </h3>
             <p className="text-lg leading-relaxed text-stone-600">

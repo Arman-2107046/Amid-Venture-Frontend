@@ -7,43 +7,43 @@ import { Plus, ArrowRight } from "lucide-react";
 
 const businessAreas = [
   {
-    title: "APPAREL",
-    image: "/BusinessImages/apparel.jpg",
+    title: "AMID SOURCING",
+    image: "/BusinessImages/sourcing2.jpg",
     description:
       "Crafting high-quality fashion garments with refined design and superior stitching for global retailers.",
     path: "/apparel",
   },
+  // {
+  //   title: "AMID FOOD",
+  //   image: "/BusinessImages/food2.jpg",
+  //   description:
+  //     "Delivering fresh, quality-assured food products with a focus on safety, taste, and sustainability.",
+  //   path: "/food",
+  // },
   {
-    title: "FOOD",
-    image: "/BusinessImages/food.jpg",
-    description:
-      "Delivering fresh, quality-assured food products with a focus on safety, taste, and sustainability.",
-    path: "/food",
-  },
-  {
-    title: "AGRICULTURE",
-    image: "/BusinessImages/agriculture.jpg",
+    title: "AMID AGRICULTURE",
+    image: "/BusinessImages/agriculture3.jpg",
     description:
       "Empowering agriculture with modern practices to ensure high-yield, sustainable, and ethical farming.",
     path: "/agriculture",
   },
   {
-    title: "ACCESSORIES",
-    image: "/BusinessImages/accessories.jpg",
+    title: "AMID DESIGN STUDIO",
+    image: "/BusinessImages/design.jpg",
     description:
       "Producing elegant accessories that complement modern lifestyles, combining style with function.",
     path: "/accessories",
   },
 
   {
-    title: "IT",
+    title: "AMID IT VENTURE",
     image: "/BusinessImages/it.jpg",
     description:
       "Providing innovative IT solutions, from software development to digital transformation and automation.",
     path: "/it",
   },
   {
-    title: "REAL ESTATE",
+    title: " AMID INVESTMENTS",
     image: "/BusinessImages/realestate.jpg",
     description:
       "Developing dynamic, sustainable real estate projects that redefine modern living and commercial spaces.",
@@ -87,9 +87,9 @@ const BusinessArenas = () => {
       )}
 
       {/* Heading */}
-      <div className="px-6 mx-auto text-center max-w-7xl sm:px-8 md:px-12">
+      <div className="px-6 mx-auto font-light text-center max-w-7xl sm:px-8 md:px-12 ">
         <motion.h2
-          className="text-4xl font-semibold tracking-tight text-slate-800 md:text-5xl"
+          className="text-4xl font-light tracking-tight text-slate-800 md:text-5xl font-dmSerifText"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -149,7 +149,7 @@ const BusinessArenas = () => {
               </div>
 
               <div className="p-6 bg-transparent">
-                <h3 className="text-xl font-semibold text-center text-gray-900">
+                <h3 className="text-xl font-light text-center text-gray-900 font-dmSerifText">
                   {business.title}
                 </h3>
               </div>

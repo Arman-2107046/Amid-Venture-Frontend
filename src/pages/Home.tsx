@@ -65,7 +65,7 @@ const Home = () => {
             (line, i) => (
               <div
                 key={i}
-                className="mb-4 text-4xl text-white transition-transform duration-300 ease-in-out cursor-pointer sm:text-6xl lg:text-7xl hover:-translate-y-2 hover:scale-105"
+                className="mb-4 text-4xl font-light text-white transition-transform duration-300 ease-in-out cursor-pointer sm:text-6xl lg:text-7xl hover:-translate-y-2 hover:scale-105 font-dmSerifText"
                 // optional: add animate-slideIn back if you want the initial slide-in
               >
                 {line}
@@ -79,7 +79,7 @@ const Home = () => {
 
       <section className="px-6 py-10 bg-gray-100 md:py-12">
         <div className="max-w-5xl mx-auto text-left">
-          <h1 className="text-3xl font-semibold leading-snug text-gray-900 md:text-5xl md:leading-tight">
+          <h1 className="text-3xl font-light leading-snug text-gray-900 md:text-5xl md:leading-tight font-dmSerifText">
             Shaping Global Trade
             <br className="hidden md:block" /> with Versatility and Vision
           </h1>
@@ -87,7 +87,7 @@ const Home = () => {
             At <span className="font-medium text-gray-900">Amid Venture</span>,
             we lead the way in global commerce across six dynamic sectors:{" "}
             <br className="hidden md:block" />
-            <span className="text-gray-900">Apparel</span>,{" "}
+            <span className="text-gray-900">Apparel</span>,
             <span className="text-gray-900">Food</span>,{" "}
             <span className="text-gray-900">Agriculture</span>,{" "}
             <span className="text-gray-900">Accessories</span>,{" "}
@@ -128,8 +128,8 @@ const Home = () => {
 
       <section className="px-6 mt-10 bg-white">
         <div className="max-w-5xl mx-auto text-left">
-          <h1 className="text-3xl font-semibold leading-snug text-gray-900 md:text-5xl md:leading-tight">
-            Amid Apparel Sourcing
+          <h1 className="text-3xl font-light leading-snug text-gray-900 md:text-5xl md:leading-tight font-dmSerifText">
+            Amid Sourcing
           </h1>
           <p className="mt-6 text-base font-light leading-relaxed text-gray-700 md:text-lg md:leading-loose">
             At <span className="font-medium text-gray-900">Amid Venture</span>,
@@ -160,7 +160,7 @@ const Home = () => {
 
         <section className="px-6 py-16 bg-white text-slate-900 md:py-24">
           <div className="max-w-5xl mx-auto">
-            <h1 className="mb-6 text-4xl font-semibold leading-tight md:text-6xl">
+            <h1 className="mb-6 text-4xl font-light leading-tight md:text-6xl font-dmSerifText">
               Explore Our <br /> Production Line
             </h1>
             <p className="max-w-2xl text-base font-light md:text-lg text-slate-700">
@@ -188,7 +188,7 @@ const Home = () => {
 
       <section className="px-6 py-16 bg-white text-slate-900 md:py-24">
         <div className="max-w-5xl mx-auto">
-          <h1 className="mb-6 text-4xl font-semibold leading-tight md:text-6xl">
+          <h1 className="mb-6 text-4xl font-light leading-tight md:text-6xl font-dmSerifText">
             Sustainable <br /> Initiatives
           </h1>
           <p className="max-w-2xl text-base font-light md:text-lg text-slate-700">
@@ -221,9 +221,9 @@ const Home = () => {
 
       <section className="px-6 py-16 bg-white text-slate-900 md:pt-[5rem]">
         <div className="max-w-5xl mx-auto">
-          <h1 className="mb-6 text-4xl font-semibold leading-tight md:text-6xl">
+          <h1 className="mb-6 text-4xl font-light leading-tight md:text-6xl font-dmSerifText ">
             Get In Touch <br />
-            With <span className="font-semibold uppercase"> AMID VENTURE</span>
+            With <span className="uppercase "> AMID VENTURE</span>
           </h1>
           <p className="max-w-2xl text-base font-light md:text-lg text-slate-700">
             We're here to connect. Whether you're a brand, a buyer, or a

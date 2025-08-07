@@ -27,25 +27,7 @@ const Business = () => {
       {/* new Hero  */}
 
       <header className="relative h-[80vh] overflow-hidden bg-white font-roboto text-slate-900">
-        {/* <div className="flex flex-row justify-around items-center h-[90vh] bg-white px-6">
-          <div className="max-w-md text-5xl font-semibold leading-tight text-gray-800 lg:text-7xl">
-            Service Your <br /> Business Demands
-          </div>
-
-          <div className="relative w-[400px] h-[400px]">
-            <img
-              src="/image1.jpg"
-              alt="Image 1"
-              className="absolute top-0 left-0 w-[250px] h-[300px] object-cover rounded-xl shadow-lg"
-            />
-            <img
-              src="/image2.jpg"
-              alt="Image 2"
-              className="absolute bottom-0 right-0 w-[250px] h-[300px] object-cover rounded-xl shadow-2xl border-4 border-white"
-            />
-          </div>
-        </div> */}
-
+       
 
 
          <BusinessHero/>
@@ -74,7 +56,7 @@ const Business = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="relative z-10 flex flex-col items-start justify-end h-full p-6 text-left text-stone-800 sm:p-10 lg:p-20"
         >
-          <h1 className="mb-4 text-3xl font-semibold leading-tight tracking-tight sm:text-4xl lg:text-5xl">
+          <h1 className="mb-4 text-3xl font-light leading-tight tracking-tight sm:text-4xl lg:text-5xl font-dmSerifText">
             Discover Our <br /> Premier Business Ventures
           </h1>
           <p className="max-w-lg text-base font-light leading-relaxed sm:max-w-xl sm:text-lg lg:max-w-2xl lg:text-xl">

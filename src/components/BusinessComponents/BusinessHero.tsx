@@ -31,14 +31,13 @@ export default function BusinessHero() {
     <header className="relative flex flex-row items-center justify-around h-[90vh] bg-white px-6 overflow-hidden">
       {/* Left: Hero Text */}
       <div className="z-10 max-w-md text-gray-800 font-dmSerifText">
-  <h1 className="text-5xl font-light leading-tight md:text-8xl lg:text-9xl">
-    AMID <br /> <span>VENTURE</span>
-  </h1>
-  <p className="mt-4 font-sans text-base font-normal text-gray-600 lg:text-lg">
-    Service Your Business Demands.
-  </p>
-</div>
-
+        <h1 className="text-5xl font-light leading-tight md:text-8xl lg:text-9xl">
+          AMID <br /> <span>VENTURE</span>
+        </h1>
+        <p className="mt-4 font-sans text-base font-normal text-gray-600 lg:text-lg">
+          Service Your Business Demands.
+        </p>
+      </div>
 
       {/* Right: Fixed Frame with Sliding Images */}
       <div className="relative w-[300px] h-[350px] overflow-hidden rounded-2xl shadow-2xl border border-gray-200 z-10">

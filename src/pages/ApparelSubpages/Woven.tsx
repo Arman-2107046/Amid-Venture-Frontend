@@ -22,6 +22,33 @@ const categories = [
   "Suit",
   "Shorts",
   "Cargo",
+  // Outerwear 
+  "Puffer Jacket",
+  "Denim Jacket",
+  "Hooded Jacket",
+  "Fleece Jacket",
+  "Bomber Jacket",
+  "Windbreaker",
+  "Track Jacket",
+  "Parka",
+  "Rain Jacket",
+  "Varsity Jacket",
+  "Blazer",
+  "Overcoat",
+  "Trench Coat",
+  // Denim 
+  "Denim Jacket",
+  "Denim Shirt",
+  "Denim Dress",
+  "Denim Skirt",
+  "Denim Jeans",
+  "Denim Shorts",
+  "Denim Dungarees",
+  "Denim Vest",
+  "Denim Blazer",
+  "Ripped Jeans",
+  "High-Waisted Jeans",
+  "Wide-Leg Jeans",
 ];
 
 const genders = ["Men", "Women", "Kids"];
@@ -81,7 +108,7 @@ const Woven: React.FC = () => {
 
         {/* Text Content */}
         <div className="relative z-10 flex flex-col items-start justify-center h-full px-6 font-roboto pt-[4rem] sm:pt-[8rem] pl-[2rem] sm:pl-[4rem] text-white">
-          <h1 className="mb-4 text-4xl font-bold sm:text-6xl">
+          <h1 className="mb-4 text-4xl font-light sm:text-6xl font-dmSerifText">
           Discover Premium Woven Collection
           </h1>
           <p className="max-w-xl mb-6 text-lg sm:text-xl">

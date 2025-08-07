@@ -83,7 +83,7 @@ const Sweater: React.FC = () => {
 
         {/* Text Content */}
         <div className="relative z-10 flex flex-col items-start justify-center h-full px-6 font-roboto pt-[4rem] sm:pt-[8rem] pl-[2rem] sm:pl-[4rem] text-white">
-          <h1 className="mb-4 text-4xl font-semibold sm:text-5xl">
+          <h1 className="mb-4 text-4xl font-light sm:text-5xl font-dmSerifText">
             Discover Premium Sweater Collection
           </h1>
           <p className="max-w-xl mb-6 text-lg sm:text-xl">

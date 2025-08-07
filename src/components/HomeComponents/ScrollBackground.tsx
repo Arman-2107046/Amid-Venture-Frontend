@@ -71,15 +71,7 @@ const ScrollBackground = () => {
 
       </section>
 
-      {/* <section>
-<div className="px-6 py-12 text-center">
-  <h1 className="mb-4 text-3xl font-semibold md:text-4xl">Sustainability at Our Core</h1>
-  <p className="max-w-3xl mx-auto text-base font-light text-gray-700 md:text-lg">
-    We are committed to driving a positive impact through every step of our journey — from ethical sourcing and eco-conscious production to fostering fair partnerships across our supply chain. Our sustainable initiatives are rooted in transparency, innovation, and responsibility, ensuring that our fashion not only looks good but also does good for the <span className="font-medium">Planet</span>, <span className="font-medium">People</span>, and <span className="font-medium">Purpose</span>.
-  </p>
-</div>
 
-</section> */}
     </motion.section>
   );
 };

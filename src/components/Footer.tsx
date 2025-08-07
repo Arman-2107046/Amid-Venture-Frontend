@@ -16,7 +16,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-12 px-6 py-16 mx-auto max-w-7xl md:grid-cols-2 lg:grid-cols-4">
           {/* Mission Section */}
           <div className="col-span-1 space-y-6 md:col-span-2 max-w-[30rem]">
-            <h2 className="text-2xl font-bold leading-tight uppercase">
+            <h2 className="text-2xl font-light leading-tight uppercase font-dmSerifText">
               Crafting Legacies for Generations
             </h2>
             <p className="text-sm text-stone-700 md:text-base">
@@ -56,7 +56,7 @@ export default function Footer() {
 
           {/* Company Links */}
           <div className="space-y-6">
-            <h3 className="font-bold tracking-wide uppercase text-stone-700">
+            <h3 className="text-xl font-light tracking-wide uppercase text-stone-700 font-dmSerifText">
               Company
             </h3>
             <ul className="space-y-3 text-sm text-stone-600">
@@ -77,7 +77,7 @@ export default function Footer() {
 
           {/* Useful Links */}
           <div className="space-y-6">
-            <h3 className="font-bold tracking-wide uppercase text-stone-700">
+            <h3 className="text-xl font-light tracking-wide uppercase text-stone-700 font-dmSerifText">
               Useful Links
             </h3>
             <ul className="space-y-3 text-sm text-stone-600">

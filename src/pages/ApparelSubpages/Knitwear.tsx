@@ -19,6 +19,47 @@ const categories = [
   "Trouser",
   "ShortPants",
   "Nightwear",
+  // sportsweaar
+  "Active T-Shirt",
+  "Performance Polo",
+  "Tank Top",
+  "Track Jacket",
+  "Track Pants",
+  "Gym Shorts",
+  "Running Shorts",
+  "Training Hoodie",
+  "Windbreaker",
+  "Sweatpants",
+  "Athletic Jogger",
+ 
+  //Swimwear
+  "Bikini",
+  "Triangle Bikini",
+  "Strapless Bikini / Bandeau",
+  "One-Piece Swimsuit",
+  "Monokini",
+  "Tankini",
+  "Long-Sleeve Swimsuit",
+  "Burkini (Modest Swimwear)",
+  "Swim Trunks",
+  "Board Shorts",
+  "Swim Briefs",
+  "Swim Jammers",
+  "Swim Leggings",
+  
+   //Intimatewear
+  
+   "Bras",
+   "Panties",
+   "Lingerie Sets",
+   "Bralettes",
+   "Shapewear",
+   "Camisoles & Slips",
+   "Boxers",
+   "Briefs",
+   "Trunks",
+   "Robes & Gowns",
+   "Sports Bras",
 ];
 
 const genders = ["Men", "Women", "Kids"];
@@ -75,7 +116,7 @@ const Knitwear: React.FC = () => {
 
         {/* Text Content */}
         <div className="relative z-10 flex flex-col items-start justify-center h-full px-6 font-roboto pt-[4rem] sm:pt-[8rem] pl-[2rem] sm:pl-[4rem] text-white">
-          <h1 className="mb-4 text-4xl font-bold sm:text-6xl">
+          <h1 className="mb-4 text-4xl font-light sm:text-6xl font-dmSerifText">
             Discover Premium Knitwear
           </h1>
           <p className="max-w-xl mb-6 text-lg sm:text-xl">
