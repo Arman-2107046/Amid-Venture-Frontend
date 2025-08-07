@@ -197,7 +197,7 @@ const Navbar = () => {
               <input
                 type="text"
                 ref={inputRef}
-                className="w-full px-3 py-2 border-b border-gray-300 focus:outline-none focus:ring-2 focus:ring-slate-500 rounded-t-md"
+                className="w-full px-3 py-2 border-b border-gray-300 rounded-sm focus:outline-none focus:ring-1 focus:ring-stone-600"
                 placeholder="Type page, e.g. knitwear"
                 value={query}
                 onChange={(e) => {
