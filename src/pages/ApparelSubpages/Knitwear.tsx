@@ -106,7 +106,7 @@ const Knitwear: React.FC = () => {
       <header className="relative h-[80vh] overflow-hidden bg-stone-200">
         {/* Background Image */}
         <img
-          src="/ApparelImages/HeroImages/knit-hero.jpg" 
+          src="/ApparelImages/HeroImages/knit-hero.webp" 
           alt="Premium Knitwear"
           className="absolute inset-0 object-cover w-full h-full"
         />

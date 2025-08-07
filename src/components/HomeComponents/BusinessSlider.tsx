@@ -9,15 +9,9 @@ const businessAreas = [
     image: "/BusinessImages/sourcing2.jpg",
     description:
       "Crafting high-quality fashion garments with refined design and superior stitching for global retailers.",
-    path: "/apparel",
+    path: "/sourcing",
   },
-  // {
-  //   title: "AMID FOOD",
-  //   image: "/BusinessImages/food2.jpg",
-  //   description:
-  //     "Delivering fresh, quality-assured food products with a focus on safety, taste, and sustainability.",
-  //   path: "/food",
-  // },
+
   {
     title: "AMID AGRICULTURE",
     image: "/BusinessImages/agriculture3.jpg",
@@ -30,7 +24,7 @@ const businessAreas = [
     image: "/BusinessImages/design.jpg",
     description:
       "Producing elegant accessories that complement modern lifestyles, combining style with function.",
-    path: "/accessories",
+    path: "/design",
   },
 
   {
@@ -45,7 +39,7 @@ const businessAreas = [
     image: "/BusinessImages/realestate.jpg",
     description:
       "Developing dynamic, sustainable real estate projects that redefine modern living and commercial spaces.",
-    path: "/realestate",
+    path: "/investments",
   },
 ];
 const BusinessSlider = () => {

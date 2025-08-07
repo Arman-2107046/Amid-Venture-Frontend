@@ -164,7 +164,7 @@ export default function MagneticMenu() {
                     }}
                     onMouseEnter={(e) => {
                       if (activeIndex !== index) {
-                        (e.currentTarget as HTMLElement).style.color = "#DC143C"; // crimson
+                        (e.currentTarget as HTMLElement).style.color = "#78716c"; // crimson
                       }
                       (e.currentTarget as HTMLElement).style.transform = "scale(1.1)";
                     }}

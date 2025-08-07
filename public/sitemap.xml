@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Main Menu Pages -->
+  <url>
+    <loc>https://amidventure.com/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://amidventure.com/business</loc>
+  </url>
+  <url>
+    <loc>https://amidventure.com/about</loc>
+  </url>
+  <url>
+    <loc>https://amidventure.com/sustainability</loc>
+  </url>
+  <url>
+    <loc>https://amidventure.com/contact</loc>
+  </url>
+
+  <!-- Footer Pages -->
+  <url>
+    <loc>https://amidventure.com/privacy</loc>
+  </url>
+  <url>
+    <loc>https://amidventure.com/service</loc>
+  </url>
+
+  <!-- Business Subpages -->
+  <url>
+    <loc>https://amidventure.com/sourcing</loc>
+  </url>
+  <url>
+    <loc>https://amidventure.com/it</loc>
+  </url>
+  <url>
+    <loc>https://amidventure.com/investments</loc>
+  </url>
+  <url>
+    <loc>https://amidventure.com/agriculture</loc>
+  </url>
+  <url>
+    <loc>https://amidventure.com/design</loc>
+  </url>
+
+  <!-- Apparel Subpages -->
+  <url>
+    <loc>https://amidventure.com/knitwear</loc>
+  </url>
+  <url>
+    <loc>https://amidventure.com/woven</loc>
+  </url>
+  <url>
+    <loc>https://amidventure.com/sweater</loc>
+  </url>
+  <url>
+    <loc>https://amidventure.com/processpage</loc>
+  </url>
+
+</urlset>

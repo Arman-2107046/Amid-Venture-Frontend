@@ -98,7 +98,7 @@ const Woven: React.FC = () => {
       <header className="relative h-[80vh] overflow-hidden bg-stone-200">
         {/* Background Image */}
         <img
-          src="/ApparelImages/HeroImages/woven-hero.png" 
+          src="/ApparelImages/HeroImages/woven-hero.webp" 
           alt="Premium Knitwear"
           className="absolute inset-0 object-cover w-full h-full"
         />

@@ -73,7 +73,7 @@ const Sweater: React.FC = () => {
         <div className="absolute top-0 left-0 z-20 w-full h-24 pointer-events-none bg-gradient-to-b from-white/40 to-transparent" />
 
         <img
-          src="/ApparelImages/HeroImages/sweater-hero.jpg"
+          src="/ApparelImages/HeroImages/sweater-hero.webp"
           alt="Premium Knitwear"
           className="absolute inset-0 object-cover w-full h-full"
         />

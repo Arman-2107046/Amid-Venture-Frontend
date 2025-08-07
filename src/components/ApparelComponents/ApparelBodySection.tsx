@@ -6,17 +6,10 @@
 import { Link } from "react-router-dom";
 
 const productCategories = [
-  { title: "Knitwear", image: "/ApparelImages/K1.jpg", path: "/knitwear" },
-  { title: "Woven", image: "/ApparelImages/W1.jpg", path: "/woven" },
-  // { title: "Denim", image: "/ApparelImages/D1.jpg", path: "/denim" },
-  // { title: "Kidswear", image: "/ApparelImages/KK1.jpg", path: "/kidswear" },
-  { title: "Sweater", image: "/ApparelImages/SW1.jpg", path: "/sweater" },
-  // { title: "Outerwear", image: "/ApparelImages/O1.jpg", path: "/outerwear" },
-  // { title: "Sportswear", image: "/ApparelImages/S1.jpg", path: "/sportswear" },
-  // { title: "Beachwear", image: "/ApparelImages/B1.jpg", path: "/beachwear" },
-  // { title: "Swimwear", image: "/ApparelImages/SM1.jpg", path: "/swimwear" },
-  // { title: "Intimate Wear", image: "/ApparelImages/I1.jpg", path: "/intimatewear" },
-  // { title: "Home Textile", image: "/ApparelImages/H1.jpg", path: "/hometextile" },
+  { title: "Knitwear", image: "/ApparelImages/K1.webp", path: "/knitwear" },
+  { title: "Woven", image: "/ApparelImages/W1.webp", path: "/woven" },
+  { title: "Sweater", image: "/ApparelImages/SW1.webp", path: "/sweater" },
+
 ];
 
 const ApparelBodySection = () => {

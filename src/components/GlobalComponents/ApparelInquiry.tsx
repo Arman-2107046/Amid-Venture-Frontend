@@ -1,8 +1,8 @@
-import { useNavigate } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
+// import { useNavigate } from "react-router-dom";
+// import { ArrowRight } from "lucide-react";
 
 export default function ApparelInquiry() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 //   navigate("/contact?interest=Apparel");
 
 //   const handleInquireClick = () => {
@@ -30,19 +30,22 @@ export default function ApparelInquiry() {
           <span className="font-medium text-gray-900">trusted partner</span> in
           curating collections that resonate globally.
         </p>
-        <section className="py-8 mx-auto font-extralight">
-      <button
-        onClick={() => navigate("/contact")}
-        className="relative flex items-center text-xl font-light text-gray-900 bg-transparent border-none outline-none cursor-pointer select-none md:text-2xl group"
-      >
-        Inquire Now
-        <ArrowRight className="w-5 h-5 ml-3 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
-        
-        {/* Enhanced ultra-thin underline */}
-        <span className="absolute left-0 -bottom-1 w-0 h-[1px] bg-gray-900 transition-all duration-500 ease-in-out group-hover:w-full" />
-      </button>
-    </section>
+     
       </div>
     </section>
   );
 }
+
+
+// <section className="py-8 mx-auto font-extralight">
+// <button
+//   onClick={() => navigate("/contact")}
+//   className="relative flex items-center text-xl font-light text-gray-900 bg-transparent border-none outline-none cursor-pointer select-none md:text-2xl group"
+// >
+//   Inquire Now
+//   <ArrowRight className="w-5 h-5 ml-3 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
+  
+//   {/* Enhanced ultra-thin underline */}
+//   <span className="absolute left-0 -bottom-1 w-0 h-[1px] bg-gray-900 transition-all duration-500 ease-in-out group-hover:w-full" />
+// </button>
+// </section>

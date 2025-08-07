@@ -1,7 +1,10 @@
 import { motion } from "framer-motion";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const steps = [
   {
+    src: "/ApparelImages/ProcessImages/inquiry.webp",
     title: "Step 1: Inquiry",
     emoji: "📝",
     content:
@@ -9,6 +12,8 @@ const steps = [
     button: true,
   },
   {
+    src: "/ApparelImages/ProcessImages/sample.webp",
+
     title: "Step 2: Sample & Quotation",
     emoji: "📦",
     content:
@@ -16,6 +21,8 @@ const steps = [
     button: false,
   },
   {
+    src: "/ApparelImages/ProcessImages/confirmation.webp",
+
     title: "Step 3: Order Confirmation",
     emoji: "🤝",
     content:
@@ -23,6 +30,8 @@ const steps = [
     button: false,
   },
   {
+    src: "/ApparelImages/ProcessImages/quality.webp",
+
     title: "Step 4: Sourcing & Quality Control",
     emoji: "🏭",
     content:
@@ -30,6 +39,8 @@ const steps = [
     button: false,
   },
   {
+    src: "/ApparelImages/ProcessImages/shipping.webp",
+
     title: "Step 5: Shipping & Delivery",
     emoji: "🚚",
     content:
@@ -37,6 +48,8 @@ const steps = [
     button: false,
   },
   {
+    src: "/ApparelImages/ProcessImages/support.webp",
+
     title: "Step 6: After-Sales Support",
     emoji: "📧",
     content:
@@ -46,6 +59,12 @@ const steps = [
 ];
 
 export default function ProcessBody() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <>
       {steps.map((step, i) => {
@@ -57,7 +76,7 @@ export default function ProcessBody() {
         return (
           <section
             key={i}
-            className={`flex items-center justify-between min-h-[60vh] bg-gradient-to-r ${bgGradient} px-6`}
+            className={`flex items-center justify-between min-h-[60vh] bg-gradient-to-r ${bgGradient} px-6 py-[5rem]`}
           >
             <div className="flex flex-col items-center max-w-6xl mx-auto md:flex-row">
               {/* Text Side with Animation */}
@@ -70,15 +89,12 @@ export default function ProcessBody() {
                   isEven ? "md:order-1" : "md:order-2"
                 }`}
               >
-                <h2 className="mb-4 text-3xl font-bold text-gray-800">
+                <h2 className="mb-4 text-3xl font-light text-gray-800 font-dmSerifText">
                   {step.emoji} {step.title}
                 </h2>
-                <p className="mb-6 text-lg text-gray-600">{step.content}</p>
-                {step.button && (
-                  <button className="px-6 py-3 font-semibold text-white transition duration-300 bg-black rounded-lg shadow-md hover:bg-gray-800">
-                    Contact Us
-                  </button>
-                )}
+                <p className="mb-6 text-lg font-light text-gray-600">
+                  {step.content}
+                </p>
               </motion.div>
 
               {/* Image Side with Animation */}
@@ -92,23 +108,14 @@ export default function ProcessBody() {
                 }`}
               >
                 <div className="flex items-center justify-center w-full bg-gray-200 rounded-lg h-96">
-                  <span className="text-gray-500">Image Placeholder</span>
+                  {/* <span className="text-gray-500">Image Placeholder</span> */}
+                  <img src={step.src} alt="image"  className="object-cover w-full h-full"/>
                 </div>
               </motion.div>
             </div>
           </section>
-
-          
-          
-
-
         );
       })}
     </>
   );
 }
-
-
-
-
-

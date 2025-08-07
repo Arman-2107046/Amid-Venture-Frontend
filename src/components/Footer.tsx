@@ -1,6 +1,6 @@
-
-
 import { Facebook, Linkedin, Youtube, Mail, Phone } from "lucide-react";
+
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -20,10 +20,10 @@ export default function Footer() {
               Crafting Legacies for Generations
             </h2>
             <p className="text-sm text-stone-700 md:text-base">
-              Together, we challenge convention, and craft
-              innovative solutions that redefine the textile industry. With a
-              deep commitment to quality, sustainability, and ethical practices,
-              we shape a brighter world.
+              Together, we challenge convention, and craft innovative solutions
+              that redefine the textile industry. With a deep commitment to
+              quality, sustainability, and ethical practices, we shape a
+              brighter world.
             </p>
 
             <div className="flex flex-col gap-6 text-sm font-medium sm:flex-row sm:gap-12">
@@ -33,7 +33,7 @@ export default function Footer() {
                 </h4>
                 <div className="flex items-center gap-2 font-semibold">
                   <Phone size={14} />
-                  +88 09612 677 677
+                  +880 1711-790505{" "}
                 </div>
               </div>
 
@@ -60,35 +60,44 @@ export default function Footer() {
               Company
             </h3>
             <ul className="space-y-3 text-sm text-stone-600">
-              {["Home","About Us", "Business", "Sustainability", "Contact"].map(
-                (item) => (
-                  <li key={item}>
-                    <a
-                      href="#"
-                      className="transition-colors hover:text-amber-500"
-                    >
-                      {item}
-                    </a>
-                  </li>
-                )
-              )}
+              {[
+                { label: "Home", path: "/" },
+                { label: "About Us", path: "/about" },
+                { label: "Business", path: "/business" },
+                { label: "Sustainability", path: "/sustainability" },
+                { label: "Contact", path: "/contact" },
+              ].map(({ label, path }) => (
+                <li key={label}>
+                  <Link
+                    to={path}
+                    className="transition-colors hover:text-amber-500"
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
+          {/* Useful Links */}
           {/* Useful Links */}
           <div className="space-y-6">
             <h3 className="text-xl font-light tracking-wide uppercase text-stone-700 font-dmSerifText">
               Useful Links
             </h3>
             <ul className="space-y-3 text-sm text-stone-600">
-              {["Terms Of Service", "Privacy Policy","Sitemap"].map((item) => (
-                <li key={item}>
-                  <a
-                    href="#"
+              {[
+                { label: "Terms Of Service", path: "/service" },
+                { label: "Privacy Policy", path: "/privacy" },
+                // { label: "Sitemap", path: "/sitemap" },
+              ].map(({ label, path }) => (
+                <li key={label}>
+                  <Link
+                    to={path}
                     className="transition-colors hover:text-amber-500"
                   >
-                    {item}
-                  </a>
+                    {label}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -110,8 +119,6 @@ export default function Footer() {
               &copy; {new Date().getFullYear()} AMID. All rights reserved.
             </p>
           </div>
-
-
 
           {/* Social Icons */}
           <div className="flex gap-4 text-stone-500">
