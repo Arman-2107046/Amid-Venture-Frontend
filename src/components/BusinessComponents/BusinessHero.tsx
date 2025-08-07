@@ -35,7 +35,7 @@ export default function BusinessHero() {
           AMID <br /> <span>VENTURE</span>
         </h1>
         <p className="mt-4 font-sans text-base font-normal text-gray-600 lg:text-lg">
-          Service Your Business Demands.
+         &nbsp; Service Your Business Demands
         </p>
       </div>
 

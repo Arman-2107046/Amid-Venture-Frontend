@@ -4,7 +4,16 @@ import Navbar from "../components/Navbar";
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin } from "lucide-react";
 
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 const Contact = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <div>
       <Navbar />
@@ -50,7 +59,6 @@ const Contact = () => {
       <section>
         <ContactForm />
       </section>
-
 
       {/* location  */}
       <section className="px-6 py-20 border-t border-gray-200 bg-stone-100">

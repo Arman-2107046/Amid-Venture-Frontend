@@ -42,7 +42,7 @@ const ApparelBodySection = () => {
               className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
             />
             <div className="absolute bottom-0 w-full p-4 text-center bg-gradient-to-t from-black/60 to-transparent">
-              <h2 className="text-lg font-medium text-gray-300 transition-all duration-300 group-hover:text-white group-hover:text-xl">
+              <h2 className="text-lg font-light text-gray-300 transition-all duration-300 group-hover:text-white group-hover:text-xl font-dmSerifText">
                 {title}
               </h2>
             </div>
