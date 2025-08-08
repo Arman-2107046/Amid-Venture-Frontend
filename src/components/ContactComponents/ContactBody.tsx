@@ -33,7 +33,7 @@ export default function ContactBody() {
       <div className="relative max-w-md p-8 mx-auto mt-16 bg-white shadow-lg md:mt-0 md:flex-1 bg-opacity-70 backdrop-blur-md rounded-xl"
 
       >
-        <h3 className="mb-6 text-xl font-semibold text-gray-800">Quick Contacts</h3>
+        <h3 className="mb-6 text-xl font-semibold text-gray-800">Get In Touch</h3>
         <p className="mb-2 text-gray-800">
           <span className="font-semibold">Hotline:</span> +880 1711-790505
         </p>
@@ -54,13 +54,16 @@ export default function ContactBody() {
 
         {/* Social Icons */}
         <div className="flex gap-3 text-gray-800">
-          <a
-            href="#"
-            aria-label="LinkedIn"
-            className="p-3 transition bg-gray-200 rounded-full hover:bg-amber-500 hover:text-white"
-          >
-            <Linkedin size={18} />
-          </a>
+        <a
+  href="https://www.linkedin.com/company/amidventuresltd/"
+  aria-label="LinkedIn"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="p-3 transition bg-gray-200 rounded-full hover:bg-amber-500 hover:text-white"
+>
+  <Linkedin size={18} />
+</a>
+
           <a
             href="#"
             aria-label="Facebook"

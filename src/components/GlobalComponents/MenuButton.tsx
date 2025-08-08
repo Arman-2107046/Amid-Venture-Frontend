@@ -1,7 +1,5 @@
-
-
 // 🧩 Icons from Lucide (for menu + social icons)
-import { Facebook, Linkedin, Youtube, Mail, Menu, X } from "lucide-react";
+import { Facebook, Linkedin, Youtube, Menu, X } from "lucide-react";
 
 // 🧠 React hooks
 import { useRef, useState, useEffect } from "react";
@@ -164,15 +162,18 @@ export default function MagneticMenu() {
                     }}
                     onMouseEnter={(e) => {
                       if (activeIndex !== index) {
-                        (e.currentTarget as HTMLElement).style.color = "#d6d3c8"; // crimson
+                        (e.currentTarget as HTMLElement).style.color =
+                          "#d6d3c8"; // crimson
                       }
-                      (e.currentTarget as HTMLElement).style.transform = "scale(1.1)";
+                      (e.currentTarget as HTMLElement).style.transform =
+                        "scale(1.1)";
                     }}
                     onMouseLeave={(e) => {
                       if (activeIndex !== index) {
                         (e.currentTarget as HTMLElement).style.color = "";
                       }
-                      (e.currentTarget as HTMLElement).style.transform = "scale(1)";
+                      (e.currentTarget as HTMLElement).style.transform =
+                        "scale(1)";
                     }}
                     className="focus:outline-none"
                   >
@@ -182,18 +183,27 @@ export default function MagneticMenu() {
               })}
             </ul>
 
-            {/* 🔗 Social links */}
-            <div className="flex gap-4 pt-10 mt-10 border-t text-stone-500">
-              {[Facebook, Linkedin, Youtube, Mail].map((Icon, idx) => (
-                <a
-                  key={idx}
-                  href="#"
-                  aria-label="Social"
-                  className="transition hover:text-amber-500"
-                >
-                  <Icon size={20} />
-                </a>
-              ))}
+            <div className="flex gap-4 text-stone-500 mt-[4rem]">
+              {[Facebook, Linkedin, Youtube].map((Icon, idx) => {
+                // Set the LinkedIn link, others remain as "#"
+                const href =
+                  Icon === Linkedin
+                    ? "https://www.linkedin.com/company/amidventuresltd/"
+                    : "#";
+
+                return (
+                  <a
+                    key={idx}
+                    href={href}
+                    aria-label="Social"
+                    className="transition hover:text-amber-500"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Icon size={20} />
+                  </a>
+                );
+              })}
             </div>
           </div>
         </div>

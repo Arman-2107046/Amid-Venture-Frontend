@@ -68,7 +68,7 @@ const Home = () => {
           preload="auto"
           className="absolute inset-0 w-full h-full object-cover brightness-[.7] blur-2"
         >
-          <source src="/HomeImages/hero-720-flipped.mp4" type="video/mp4" />
+          <source src="/HomeImages/final-hero-720.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 

@@ -122,17 +122,28 @@ export default function Footer() {
 
           {/* Social Icons */}
           <div className="flex gap-4 text-stone-500">
-            {[Facebook, Linkedin, Youtube].map((Icon, idx) => (
-              <a
-                key={idx}
-                href="#"
-                aria-label="Social"
-                className="transition hover:text-amber-500"
-              >
-                <Icon size={20} />
-              </a>
-            ))}
-          </div>
+  {[Facebook, Linkedin, Youtube].map((Icon, idx) => {
+    // Set the LinkedIn link, others remain as "#"
+    const href =
+      Icon === Linkedin
+        ? "https://www.linkedin.com/company/amidventuresltd/"
+        : "#";
+
+    return (
+      <a
+        key={idx}
+        href={href}
+        aria-label="Social"
+        className="transition hover:text-amber-500"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Icon size={20} />
+      </a>
+    );
+  })}
+</div>
+
         </div>
       </div>
     </footer>
