@@ -171,7 +171,6 @@
 
 
 
-
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useNavigate } from "react-router-dom";
@@ -206,7 +205,7 @@ const SustainabilityImage = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <div className="flex w-full max-w-7xl mx-auto gap-6 h-[75vh] px-4">
+    <div className="flex flex-col md:flex-row w-full max-w-7xl mx-auto gap-6 h-auto md:h-[75vh] px-4">
       {sections.map((section, index) => (
         <div
           key={section.title}
@@ -220,19 +219,19 @@ const SustainabilityImage = () => {
             src={section.image}
             alt={section.title}
             loading="lazy"
-            className="object-cover w-full h-full aspect-[3/5] transition-transform duration-300 group-hover:scale-105"
+            className="object-cover w-full h-64 transition-transform duration-300 md:h-full group-hover:scale-105"
           />
 
           {/* Static title on bottom of image */}
-          <div className="absolute bottom-0 left-0 right-0 z-10 py-3 text-center text-white bg-black bg-opacity-60">
-            <h3 className="text-xl font-light font-dmSerifText">{section.title}</h3>
+          <div className="absolute bottom-0 left-0 right-0 z-10 py-2 text-sm text-center text-white bg-black md:py-3 md:text-xl bg-opacity-60">
+            <h3 className="font-light font-dmSerifText">{section.title}</h3>
           </div>
 
-          {/* Drawer (only on hover) */}
+          {/* Drawer (only on hover for md+, always open on mobile) */}
           <AnimatePresence>
-            {hoveredIndex === index && (
+            {(hoveredIndex === index || window.innerWidth < 768) && (
               <motion.div
-                initial={{ y: "100%" }}
+                initial={{ y: window.innerWidth < 768 ? 0 : "100%" }}
                 animate={{ y: 0 }}
                 exit={{ y: "100%" }}
                 transition={{
@@ -240,19 +239,19 @@ const SustainabilityImage = () => {
                   duration: 0.9,
                   ease: [0.4, 0, 0.2, 1],
                 }}
-                className="absolute bottom-0 left-0 right-0 z-20 p-6 text-white bg-black bg-opacity-80"
+                className="absolute bottom-0 left-0 right-0 z-20 p-4 text-white bg-black md:p-6 bg-opacity-80"
                 style={{ backdropFilter: "blur(8px)" }}
               >
-                <h3 className="mb-2 text-2xl font-light font-dmSerifText">
+                <h3 className="mb-2 text-lg font-light md:text-2xl font-dmSerifText">
                   {section.title}
                 </h3>
-                <p className="mb-4 text-sm font-light leading-relaxed">
+                <p className="mb-4 text-xs font-light leading-relaxed md:text-sm">
                   {section.description}
                 </p>
-                <section className="mt-6 font-extralight">
+                <section className="mt-4 md:mt-6 font-extralight">
                   <button
                     onClick={() => navigate(section.link)}
-                    className="relative flex items-center text-lg text-white bg-transparent border-none outline-none cursor-pointer select-none group"
+                    className="relative flex items-center text-sm text-white bg-transparent border-none outline-none cursor-pointer select-none md:text-lg group"
                   >
                     know more
                     <ArrowRight className="w-4 h-4 ml-2 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
