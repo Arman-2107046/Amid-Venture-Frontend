@@ -71,69 +71,66 @@ const Sourcing = () => {
 
       {/* Hero Section */}
       {/* Hero Section */}
-      <header className="relative min-h-[100vh] bg-white font-dmSerifText text-slate-900 flex flex-col items-center justify-center px-4 sm:px-8 md:px-24 pt-[4rem] pb-[6rem]">
-        {/* Headline with fade + lift effect */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{
-            duration: 1.6,
-            ease: "easeOut",
-          }}
-          className="text-center lg:mt-[5rem]"
-        >
-          <h1 className="text-4xl font-light tracking-wide sm:text-5xl lg:text-7xl font-dmSerifText">
-            AMID SOURCING
-          </h1>
-        </motion.div>
+      <header className="pt-[7rem]  relative min-h-[100vh] bg-white font-dmSerifText text-slate-900 flex flex-col items-center justify-center px-4 sm:px-8 md:px-24  pb-[6rem]">
+  {/* Headline with fade + lift effect */}
+  <motion.div
+    initial={{ opacity: 0, y: 30 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{
+      duration: 1.6,
+      ease: "easeOut",
+    }}
+    className="text-center lg:mt-[5rem]"
+  >
+    <h1 className="text-3xl font-light tracking-wide sm:text-5xl lg:text-7xl font-dmSerifText">
+      AMID SOURCING
+    </h1>
+  </motion.div>
 
-        {/* Small Subtitle */}
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{
-            delay: 0.1,
-            duration: 1.2,
-            ease: "easeOut",
-          }}
-          className="max-w-xl mt-4 text-lg font-light text-center text-slate-600"
-        >
-          Precision • Passion • Purpose
-        </motion.p>
+  {/* Subtitle */}
+  <motion.p
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{
+      delay: 0.1,
+      duration: 1.2,
+      ease: "easeOut",
+    }}
+    className="max-w-xl mt-4 text-base font-light text-center sm:text-lg lg:text-xl text-slate-600 mb-[2rem]"
+  >
+    Precision • Passion • Purpose
+  </motion.p>
 
-        {/* Gap */}
-        <div className="h-8 sm:h-12" />
+  {/* Gap */}
+  <div className="h-6 sm:h-12" />
 
-        {/* Images Grid */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{
-            delay: 0.1,
-            duration: 1.3,
-            ease: "easeOut",
-          }}
-          className="grid w-full max-w-6xl grid-cols-2 gap-4 sm:grid-cols-4"
-        >
-          {["hero3.webp", "hero1.webp", "hero2.webp", "hero4.webp"].map(
-            (img, idx) => (
-              <motion.div
-                key={idx}
-                whileHover={{ scale: 1.05 }}
-                className="overflow-hidden h-[20rem] sm:h-[23rem] w-full rounded shadow-md"
-              >
-                <img
-                  src={`/ApparelImages/HeroImages/${img}`}
-                  alt={`Hero ${idx}`}
-                  loading="lazy"
-
-                  className="object-cover w-full h-full transition-transform duration-500 hover:scale-110"
-                />
-              </motion.div>
-            )
-          )}
-        </motion.div>
-      </header>
+  {/* Image Grid */}
+  <motion.div
+    initial={{ opacity: 0, y: 40 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{
+      delay: 0.1,
+      duration: 1.3,
+      ease: "easeOut",
+    }}
+    className="grid w-full max-w-6xl grid-cols-2 gap-4 px-2 sm:grid-cols-3 md:grid-cols-4 sm:px-4"
+  >
+    {["hero3.webp", "hero1.webp", "hero2.webp", "hero4.webp"].map((img, idx) => (
+      <motion.div
+        key={idx}
+        whileHover={{ scale: 1.05 }}
+        className="w-full h-48 overflow-hidden rounded shadow-md sm:h-64 md:h-72"
+      >
+        <img
+          src={`/ApparelImages/HeroImages/${img}`}
+          alt={`Hero ${idx}`}
+          loading="lazy"
+          className="object-cover w-full h-full transition-transform duration-500 hover:scale-110"
+        />
+      </motion.div>
+    ))}
+  </motion.div>
+</header>
 
       {/* INTRO SECTION   */}
       <section className="px-6 py-24 bg-stone-100 text-slate-900 mt-[4rem]">

@@ -5,20 +5,20 @@ const missionData = [
     title: "Planet",
     description:
       "Protecting our environment through innovative solutions that dramatically reduce carbon footprint and accelerate renewable energy adoption.",
-    image: "/SustainabilityImages/planet.webp",
+    image: "/HomeImages/planet2.webp",
   },
   {
     title: "People",
     description:
       "Empowering communities and creating transformative opportunities that foster social equity, sustainable livelihoods, and human flourishing.",
-    image: "/SustainabilityImages/people2.webp",
-  },
+      image: "/HomeImages/people2.webp",
+    },
   {
     title: "Purpose",
     description:
       "Driving meaningful change through purpose-driven investments that seamlessly align exceptional profit with extraordinary positive impact.",
-    image: "/SustainabilityImages/purpose.webp",
-  },
+      image: "/HomeImages/purpos2.webp",
+    },
 ];
 
 const Mission = () => {

@@ -16,7 +16,18 @@ import { Helmet } from "react-helmet";
 const Business = () => {
   // const navigate = useNavigate();
 
-  <Helmet>
+
+  // Get the current pathname and scroll to top on change
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return (
+    <div>
+
+
+<Helmet>
     <title>Premier Business Ventures | Amid Venture</title>
     <meta
       name="description"
@@ -51,16 +62,12 @@ const Business = () => {
       content="https://www.amidventure.com/amid.webp"
     />
     <meta name="twitter:card" content="summary_large_image" />
-  </Helmet>;
+  </Helmet>
 
-  // Get the current pathname and scroll to top on change
-  const { pathname } = useLocation();
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
 
-  return (
-    <div>
+
+
+      
       {/* Navigation Bar */}
       <Navbar />
 
