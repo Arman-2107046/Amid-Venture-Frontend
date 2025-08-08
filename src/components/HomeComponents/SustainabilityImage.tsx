@@ -167,6 +167,11 @@
 // };
 
 // export default SustainabilityImage;
+
+
+
+
+
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useNavigate } from "react-router-dom";
@@ -178,21 +183,21 @@ const sections = [
     image: "/HomeImages/planet2.webp",
     description:
       "Committed to protecting the Earth through sustainable materials and eco-friendly practices for a greener future.",
-    link: "/sustainability/planet",
+    link: "/sustainability",
   },
   {
     title: "People",
     image: "/HomeImages/people2.webp",
     description:
       "We are dedicated to empowering communities and ensuring fair treatment and safe working conditions for all involved in our supply chain.",
-    link: "/sustainability/people",
+    link: "/sustainability",
   },
   {
     title: "Purpose",
     image: "/HomeImages/purpos2.webp",
     description:
       "We strive to create meaningful impact by driving responsible innovation and fostering long-term positive change.",
-    link: "/sustainability/purpose",
+    link: "/sustainability",
   },
 ];
 
@@ -218,7 +223,12 @@ const SustainabilityImage = () => {
             className="object-cover w-full h-full aspect-[3/5] transition-transform duration-300 group-hover:scale-105"
           />
 
-          {/* Drawer */}
+          {/* Static title on bottom of image */}
+          <div className="absolute bottom-0 left-0 right-0 z-10 py-3 text-center text-white bg-black bg-opacity-60">
+            <h3 className="text-xl font-light font-dmSerifText">{section.title}</h3>
+          </div>
+
+          {/* Drawer (only on hover) */}
           <AnimatePresence>
             {hoveredIndex === index && (
               <motion.div
@@ -230,7 +240,7 @@ const SustainabilityImage = () => {
                   duration: 0.9,
                   ease: [0.4, 0, 0.2, 1],
                 }}
-                className="absolute bottom-0 left-0 right-0 p-6 text-white bg-black bg-opacity-80"
+                className="absolute bottom-0 left-0 right-0 z-20 p-6 text-white bg-black bg-opacity-80"
                 style={{ backdropFilter: "blur(8px)" }}
               >
                 <h3 className="mb-2 text-2xl font-light font-dmSerifText">
@@ -241,7 +251,7 @@ const SustainabilityImage = () => {
                 </p>
                 <section className="mt-6 font-extralight">
                   <button
-                    onClick={() => navigate('/sustainability')}
+                    onClick={() => navigate(section.link)}
                     className="relative flex items-center text-lg text-white bg-transparent border-none outline-none cursor-pointer select-none group"
                   >
                     know more
