@@ -1,43 +1,65 @@
+// Import necessary components and libraries
 import Footer from "../components/Footer";
 import BusinessSlider from "../components/HomeComponents/BusinessSlider";
 import ScrollBackground from "../components/HomeComponents/ScrollBackground";
-// import HeroText from "../components/HomeComponents/HeroText";
-// import SlidingGallery from "../components/HomeComponents/SlidingGallery";
-// import HeroHeadline from "../components/HomeComponents/HeroHeadline";
 import Navbar from "../components/Navbar";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-// import ApparelSection from "../components/HomeComponents/ApparelSection";
 
-//------------------------------------------------------------
+// Additional imports
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import ApparelBodySection from "../components/ApparelComponents/ApparelBodySection";
 import SlidingGallery from "../components/HomeComponents/SlidingGallery";
 import SustainabilityImage from "../components/HomeComponents/SustainabilityImage";
-
 import { Link } from "react-router-dom";
 import ContactBody from "../components/ContactComponents/ContactBody";
-
+import { Helmet } from "react-helmet";
+// Define the Home component
 const Home = () => {
+  // Initialize hooks
   const navigate = useNavigate();
-
   const { pathname } = useLocation();
 
+  // Scroll to top on pathname change
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
   return (
     <div>
+
+<Helmet>
+  <title>Amid Venture | Thriving in Excellence, Expanding the Horizon</title>
+  <meta
+    name="description"
+    content="Amid Venture leads global commerce in Apparel, Agriculture, Accessories, IT, and Real Estate — committed to quality, innovation, and ethical practices."
+  />
+  <meta name="keywords" content="Amid Venture, global trade, apparel sourcing, sustainable fashion, agriculture, food exports, IT services, real estate investment" />
+  <meta name="author" content="Amid Venture" />
+  <meta property="og:title" content="Amid Venture | Thriving in Excellence, Expanding the Horizon" />
+  <meta property="og:description" content="Strategic global commerce partner across fashion, food, IT, agriculture, and real estate." />
+  <meta property="og:image" content="https://www.amidventure.com/og-home.jpg" />
+  <meta property="og:url" content="https://www.amidventure.com" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Amid Venture | Thriving in Excellence, Expanding the Horizon" />
+  <meta name="twitter:description" content="We shape global trade with versatility and vision across six dynamic sectors." />
+  <meta name="twitter:image" content="https://www.amidventure.com/amid.webp" />
+  <link rel="canonical" href="https://www.amidventure.com/" />
+  {/* <link rel="icon" href="/favicon.ico" /> */}
+  <link rel="icon" type="image/webp" href="/amid-crop2.webp" />
+
+</Helmet>
+
+      
+      {/* Navigation Bar */}
       <Navbar />
 
-      {/* BusinessSlider  */}
-
-      {/* // HERO SECTION  */}
+      {/* Hero Section */}
       <header className="relative h-[100vh] overflow-hidden bg-white font-">
-        {/* 🎥 Hero Background Video */}
+        {/* Hero Background Video */}
         <video
           autoPlay
           muted
@@ -49,8 +71,11 @@ const Home = () => {
           <source src="/HomeImages/hero-720-flipped.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
+
         {/* Top white light overlay */}
         <div className="absolute top-0 left-0 z-20 w-full h-24 pointer-events-none bg-gradient-to-b from-white/60 to-transparent" />
+
+        {/* Hero Text */}
         <motion.div
           className="relative z-10 flex flex-col items-start justify-center h-screen px-6 font-roboto pt-[4rem] sm:pt-[15rem] pl-[2rem] sm:pl-[4rem] overflow-hidden"
           animate={{
@@ -66,17 +91,15 @@ const Home = () => {
               <div
                 key={i}
                 className="mb-4 text-4xl font-light text-white transition-transform duration-300 ease-in-out cursor-pointer sm:text-6xl lg:text-7xl hover:-translate-y-2 hover:scale-105 font-dmSerifText"
-                // optional: add animate-slideIn back if you want the initial slide-in
               >
                 {line}
               </div>
             )
           )}
         </motion.div>
-
-        {/* <HeroText/> */}
       </header>
 
+      {/* Shaping Global Trade Section */}
       <section className="px-6 py-10 bg-gray-100 md:py-12">
         <div className="max-w-5xl mx-auto text-left">
           <h1 className="text-3xl font-light leading-snug text-gray-900 md:text-5xl md:leading-tight font-dmSerifText">
@@ -107,13 +130,12 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Business Slider  */}
+      {/* Business Slider Section */}
       <section className="mt-[2rem]">
         <BusinessSlider />
       </section>
 
-      {/* ANCHOR TAG SECTION  */}
-
+      {/* Know More About Our Businesses Button */}
       <section className="flex justify-center py-8 font-extralight">
         <button
           onClick={() => navigate("/business")}
@@ -121,11 +143,11 @@ const Home = () => {
         >
           Know More About Our Businesses
           <ArrowRight className="w-4 h-4 ml-2 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
-          {/* ultra-thin underline */}
           <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-gray-800 transition-all duration-500 ease-in-out group-hover:w-full" />
         </button>
       </section>
 
+      {/* Amid Sourcing Section */}
       <section className="px-6 mt-10 bg-white">
         <div className="max-w-5xl mx-auto text-left">
           <h1 className="text-3xl font-light leading-snug text-gray-900 md:text-5xl md:leading-tight font-dmSerifText">
@@ -153,11 +175,9 @@ const Home = () => {
         </div>
       </section>
 
-      {/* APPAREL GRID  */}
-
+      {/* Apparel Grid Section */}
       <section className="lg:mt-[4rem] px-6 py-16 bg-white text-slate-800">
         <SlidingGallery />
-
         <section className="px-6 py-16 bg-white text-slate-900 md:py-24">
           <div className="max-w-5xl mx-auto">
             <h1 className="mb-6 text-4xl font-light leading-tight md:text-6xl font-dmSerifText">
@@ -170,22 +190,15 @@ const Home = () => {
             </p>
           </div>
         </section>
-
-        {/* Product Categories Grid */}
         <ApparelBodySection />
       </section>
 
-      {/* <section>
-  <ApparelSection/>
-</section> */}
-
-      {/* SCROLL BG SECITON  */}
+      {/* Scroll Background Section */}
       <section>
         <ScrollBackground />
       </section>
 
-      {/* Sustain Image  */}
-
+      {/* Sustainable Initiatives Section */}
       <section className="px-6 py-16 bg-white text-slate-900 md:py-24">
         <div className="max-w-5xl mx-auto">
           <h1 className="mb-6 text-4xl font-light leading-tight md:text-6xl font-dmSerifText">
@@ -207,7 +220,6 @@ const Home = () => {
               >
                 Our Sustainable Initiatives{" "}
                 <ArrowRight className="w-4 h-4 ml-2 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
-                {/* ultra-thin underline */}
                 <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-gray-800 transition-all duration-500 ease-in-out group-hover:w-full" />
               </button>
             </section>
@@ -215,15 +227,17 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Sustainability Image Section */}
       <section>
         <SustainabilityImage />
       </section>
 
+      {/* Get In Touch Section */}
       <section className="px-6 py-16 bg-white text-slate-900 md:pt-[5rem]">
         <div className="max-w-5xl mx-auto">
-          <h1 className="mb-6 text-4xl font-light leading-tight md:text-6xl font-dmSerifText ">
+          <h1 className="mb-6 text-4xl font-light leading-tight md:text-6xl font-dmSerifText">
             Get In Touch <br />
-            With <span className="uppercase "> AMID VENTURE</span>
+            With <span className="uppercase">AMID VENTURE</span>
           </h1>
           <p className="max-w-2xl text-base font-light md:text-lg text-slate-700">
             We're here to connect. Whether you're a brand, a buyer, or a
@@ -233,13 +247,16 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Contact Body Section */}
       <section className="mt-[1rem]">
         <ContactBody />
       </section>
 
+      {/* Footer */}
       <Footer />
     </div>
   );
 };
 
+// Export the Home component
 export default Home;

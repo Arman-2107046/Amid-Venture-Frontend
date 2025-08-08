@@ -7,6 +7,7 @@ import ApparelInquiry from "../../components/GlobalComponents/ApparelInquiry";
 
 
 import { useLocation } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const categories = [
   "Pullover",
@@ -64,6 +65,38 @@ const Sweater: React.FC = () => {
   
   return (
     <main className="">
+
+<Helmet>
+  <title>Premium Sweater Collection | Cardigans, Pullovers & More | Amid Venture</title>
+  <meta
+    name="description"
+    content="Shop Amid Venture's premium sweater collection. From cozy pullovers and cardigans to stylish turtlenecks and sweater dresses for Men, Women, and Kids."
+  />
+  <link rel="canonical" href="https://www.amidventure.com/apparel/sweater" />
+  <link rel="icon" type="image/webp" href="/amid-crop2.webp" />
+  <meta name="robots" content="index, follow" />
+
+  {/* Open Graph / Facebook */}
+  <meta property="og:title" content="Premium Sweater Collection | Cardigans, Pullovers & More | Amid Venture" />
+  <meta
+    property="og:description"
+    content="Explore stylish and warm sweaters for every season. Pullovers, hooded sweaters, ponchos and more by Amid Venture."
+  />
+  <meta property="og:url" content="https://www.amidventure.com/apparel/sweater" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://www.amidventure.com/ApparelImages/HeroImages/sweater-hero.webp" />
+
+  {/* Twitter */}
+  <meta name="twitter:title" content="Premium Sweater Collection | Cardigans, Pullovers & More | Amid Venture" />
+  <meta
+    name="twitter:description"
+    content="Find your perfect fit from our cozy sweater collection. Great styles for Men, Women, and Kids."
+  />
+  <meta name="twitter:image" content="https://www.amidventure.com/ApparelImages/HeroImages/sweater-hero.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+</Helmet>
+
+      
       <Navbar />
 
       {/* Hero Section  */}

@@ -5,6 +5,7 @@ import Footer from "../../components/Footer";
 import { KnitwearImages } from "../../Database/ApparelDB";
 import ApparelInquiry from "../../components/GlobalComponents/ApparelInquiry";
 import { useLocation } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const categories = [
   "T-Shirt",
@@ -101,6 +102,43 @@ const Knitwear: React.FC = () => {
 
   return (
     <main className="">
+
+<Helmet>
+  <title>Premium Knitwear Collection | Comfort Meets Fashion | Amid Venture</title>
+  <meta
+    name="description"
+    content="Explore Amid Venture’s premium knitwear collection — combining comfort, warmth, and timeless style for Men, Women, and Kids. Filter by gender and category to find your perfect fit."
+  />
+  <link rel="canonical" href="https://www.amidventure.com/apparel/knitwear" />
+  <link rel="icon" type="image/webp" href="/amid-crop2.webp" />
+  <meta name="robots" content="index, follow" />
+
+  {/* Open Graph / Facebook */}
+  <meta property="og:title" content="Premium Knitwear Collection | Comfort Meets Fashion | Amid Venture" />
+  <meta
+    property="og:description"
+    content="Explore high-quality knitwear for Men, Women, and Kids. Stylish, comfortable, and customizable options available at Amid Venture."
+  />
+  <meta property="og:url" content="https://www.amidventure.com/apparel/knitwear" />
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:image"
+    content="https://www.amidventure.com/ApparelImages/HeroImages/knit-hero.webp"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:title" content="Premium Knitwear Collection | Comfort Meets Fashion | Amid Venture" />
+  <meta
+    name="twitter:description"
+    content="Discover timeless knitwear styles for all genders. Shop Amid Venture’s latest apparel with premium quality and fit."
+  />
+  <meta
+    name="twitter:image"
+    content="https://www.amidventure.com/ApparelImages/HeroImages/knit-hero.webp"
+  />
+  <meta name="twitter:card" content="summary_large_image" />
+</Helmet>
+
       <Navbar />
 
       <header className="relative h-[80vh] overflow-hidden bg-stone-200">

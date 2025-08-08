@@ -10,6 +10,7 @@ import WhatSetsUsApart from "../components/AboutComponents/WhatSetsUsApart";
 import InnovationSustainability from "../components/AboutComponents/InnovationSustainability";
 import BusinessSlider from "../components/HomeComponents/BusinessSlider";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const About = () => {
   const { pathname } = useLocation();
@@ -23,6 +24,50 @@ const About = () => {
   return (
     <div>
       <Navbar />
+
+      <Helmet>
+        <title>
+          About Amid Venture | Pioneering Ventures, Shaping Tomorrow
+        </title>
+        <meta
+          name="description"
+          content="Learn about Amid Venture’s visionary journey, commitment to innovation, and dedication to sustainable excellence across diverse industries."
+        />
+        <link rel="canonical" href="https://www.amidventure.com/about" />
+        <link rel="icon" type="image/webp" href="/amid-crop2.webp" />
+        <meta name="robots" content="index, follow" />
+
+        {/* Open Graph / Facebook */}
+        <meta
+          property="og:title"
+          content="About Amid Venture | Pioneering Ventures, Shaping Tomorrow"
+        />
+        <meta
+          property="og:description"
+          content="Learn about Amid Venture’s visionary journey, commitment to innovation, and dedication to sustainable excellence across diverse industries."
+        />
+        <meta property="og:url" content="https://www.amidventure.com/about" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://www.amidventure.com/og-image-about.jpg"
+        />
+
+        {/* Twitter */}
+        <meta
+          name="twitter:title"
+          content="About Amid Venture | Pioneering Ventures, Shaping Tomorrow"
+        />
+        <meta
+          name="twitter:description"
+          content="Learn about Amid Venture’s visionary journey, commitment to innovation, and dedication to sustainable excellence across diverse industries."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.amidventure.com/og-image-about.jpg"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
 
       {/* HERO SECTION */}
       <header className="relative h-[80vh] overflow-hidden  bg-slate-100">

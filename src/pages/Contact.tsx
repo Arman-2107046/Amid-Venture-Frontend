@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { Mail, Phone, MapPin } from "lucide-react";
 
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import { useLocation } from "react-router-dom";
 
 const Contact = () => {
@@ -16,8 +17,43 @@ const Contact = () => {
 
   return (
     <div>
+
+<Helmet>
+  <title>Contact Amid Venture | Get in Touch with Our Team</title>
+  <meta
+    name="description"
+    content="Reach out to Amid Venture for inquiries, partnerships, or proposals. We’re ready to connect and collaborate across fashion, food, real estate, and digital solutions."
+  />
+  <link rel="canonical" href="https://www.amidventure.com/contact" />
+  <link rel="icon" type="image/webp" href="/amid-crop2.webp" />
+  <meta name="robots" content="index, follow" />
+
+  {/* Open Graph / Facebook */}
+  <meta property="og:title" content="Contact Amid Venture | Get in Touch with Our Team" />
+  <meta
+    property="og:description"
+    content="Reach out to Amid Venture for inquiries, partnerships, or proposals. We’re ready to connect and collaborate across fashion, food, real estate, and digital solutions."
+  />
+  <meta property="og:url" content="https://www.amidventure.com/contact" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://www.amidventure.com/amid.webp" />
+
+  {/* Twitter */}
+  <meta name="twitter:title" content="Contact Amid Venture | Get in Touch with Our Team" />
+  <meta
+    name="twitter:description"
+    content="Reach out to Amid Venture for inquiries, partnerships, or proposals. We’re ready to connect and collaborate across fashion, food, real estate, and digital solutions."
+  />
+  <meta name="twitter:image" content="https://www.amidventure.com/amid.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+</Helmet>
+
+
+
       <Navbar />
 
+
+      
       <header className="relative h-[70vh] overflow-hidden bg-white text-slate-900">
         <div className="absolute top-0 left-0 z-20 w-full h-24 pointer-events-none bg-gradient-to-b from-white/60 to-transparent" />
 
@@ -95,8 +131,7 @@ const Contact = () => {
                 <div>
                   <p className="text-sm text-gray-500">Phone</p>
                   <p className="text-lg font-medium text-gray-800">
-                    +880 1611-999999, +880 1309-888888
-                  </p>
+                  +880 1711-790505                  </p>
                 </div>
               </div>
 
@@ -122,14 +157,6 @@ const Contact = () => {
               </div>
             </div>
 
-            {/* <div className="mt-6 text-left">
-              <p className="text-sm text-gray-500">Address</p>
-              <address className="text-lg not-italic font-medium text-gray-800">
-                Uttara sector 13, Road- 17
-                <br />
-                Dhaka, Bangladesh
-              </address>
-            </div> */}
           </motion.div>
 
           <motion.div
@@ -150,16 +177,7 @@ const Contact = () => {
               className="w-full h-full"
             ></iframe>
 
-            {/* <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6299.364249616243!2d90.38324473957482!3d23.87186252540126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c41746c7628b%3A0x909d6a0f5cebfe8f!2sSector-13%2C%20Dhaka%201230!5e1!3m2!1sen!2sbd!4v1753015638921!5m2!1sen!2sbd"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Google Map of our Office"
-              className="w-full h-full"
-            ></iframe> */}
+
           </motion.div>
         </div>
       </section>

@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import ProcessBody from "../../components/ApparelComponents/ProcessBody";
 import Footer from "../../components/Footer";
 // import ApparelInquiry from "../../components/GlobalComponents/ApparelInquiry";
@@ -7,6 +8,57 @@ import { motion } from "framer-motion";
 const ProcessPage = () => {
   return (
     <div>
+      <Helmet>
+        <title>
+          Our Apparel Sourcing Process | Premium Garment Production | Amid
+          Venture
+        </title>
+        <meta
+          name="description"
+          content="Discover Amid Venture’s detailed apparel sourcing process—from design and fabric sourcing to ethical manufacturing, QC, and global delivery."
+        />
+        <link
+          rel="canonical"
+          href="https://www.amidventure.com/apparel/process"
+        />
+        <link rel="icon" type="image/webp" href="/amid-crop2.webp" />
+        <meta name="robots" content="index, follow" />
+
+        {/* Open Graph / Facebook */}
+        <meta
+          property="og:title"
+          content="Our Apparel Sourcing Process | Premium Garment Production | Amid Venture"
+        />
+        <meta
+          property="og:description"
+          content="From design to delivery, Amid Venture ensures quality and transparency in every step of the apparel sourcing journey."
+        />
+        <meta
+          property="og:url"
+          content="https://www.amidventure.com/apparel/process"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://www.amidventure.com/ApparelImages/ProcessImages/phero1.webp"
+        />
+
+        {/* Twitter */}
+        <meta
+          name="twitter:title"
+          content="Our Apparel Sourcing Process | Premium Garment Production | Amid Venture"
+        />
+        <meta
+          name="twitter:description"
+          content="Step into our process — from sourcing and ethical production to global delivery. Experience premium apparel manufacturing with Amid Venture."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.amidventure.com/ApparelImages/ProcessImages/phero1.webp"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
+
       <Navbar />
 
       <div className="absolute top-0 left-0 z-20 w-full h-24 pointer-events-none bg-gradient-to-b from-white/60 to-transparent" />
@@ -22,7 +74,9 @@ const ProcessPage = () => {
 
         {/* Overlay */}
         <div className="relative z-10 flex flex-col items-start justify-center h-full px-10 text-white bg-black/40">
-          <h2 className="mb-4 text-3xl font-light md:text-5xl font-dmSerifText">Our Process</h2>
+          <h2 className="mb-4 text-3xl font-light md:text-5xl font-dmSerifText">
+            Our Process
+          </h2>
           <p className="max-w-2xl mb-6 font-light text-md md:text-lg">
             From design development and fabric sourcing to production, quality
             control, and global shipping our process ensures that every garment
@@ -62,8 +116,7 @@ const ProcessPage = () => {
         <ProcessBody />
       </section>
 
-
-{/* 
+      {/* 
       <section className="px-6 py-10 bg-white md:py-12">
       <div className="max-w-5xl mx-auto text-left">
         <h1 className="text-3xl font-light leading-snug text-gray-900 md:text-5xl md:leading-tight font-dmSerifText">
@@ -110,7 +163,6 @@ const ProcessPage = () => {
           </button>
         </motion.div>
       </section> */}
-
 
       <Footer />
     </div>

@@ -12,6 +12,7 @@ import { ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import ContactBody from "../components/ContactComponents/ContactBody";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 
 const Sourcing = () => {
@@ -27,6 +28,45 @@ const Sourcing = () => {
 
   return (
     <div>
+
+<Helmet>
+  <title>Amid Sourcing | Global Apparel Solutions | Amid Venture</title>
+  <meta
+    name="description"
+    content="Discover AMID SOURCING – your global partner for premium apparel solutions. From design to delivery, we offer ethical sourcing, quality craftsmanship, and expert logistics."
+  />
+  <link rel="canonical" href="https://www.amidventure.com/sourcing" />
+  <link rel="icon" type="image/webp" href="/amid-crop2.webp" />
+  <meta name="robots" content="index, follow" />
+
+  {/* Open Graph / Facebook */}
+  <meta property="og:title" content="Amid Sourcing | Global Apparel Solutions | Amid Venture" />
+  <meta
+    property="og:description"
+    content="Discover AMID SOURCING – your global partner for premium apparel solutions. From design to delivery, we offer ethical sourcing, quality craftsmanship, and expert logistics."
+  />
+  <meta property="og:url" content="https://www.amidventure.com/sourcing" />
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:image"
+    content="https://www.amidventure.com/ApparelImages/HeroImages/hero1.webp"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:title" content="Amid Sourcing | Global Apparel Solutions | Amid Venture" />
+  <meta
+    name="twitter:description"
+    content="Discover AMID SOURCING – your global partner for premium apparel solutions. From design to delivery, we offer ethical sourcing, quality craftsmanship, and expert logistics."
+  />
+  <meta
+    name="twitter:image"
+    content="https://www.amidventure.com/ApparelImages/HeroImages/hero1.webp"
+  />
+  <meta name="twitter:card" content="summary_large_image" />
+</Helmet>
+
+
+      
       <Navbar />
 
       {/* Hero Section */}

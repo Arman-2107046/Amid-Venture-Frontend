@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Mission from "../components/SustainabilityComponents/Mission";
@@ -21,6 +22,40 @@ const Sustainability = () => {
 
   return (
     <div>
+
+<Helmet>
+  <title>Sustainable Initiatives | Amid Venture</title>
+  <meta
+    name="description"
+    content="Explore Amid Venture's commitment to sustainability and green initiatives. Learn how we foster eco-friendly practices for a better, greener future."
+  />
+  <link rel="canonical" href="https://www.amidventure.com/sustainability" />
+  <link rel="icon" type="image/webp" href="/amid-crop2.webp" />
+  <meta name="robots" content="index, follow" />
+  {/* Open Graph / Facebook */}
+  <meta property="og:title" content="Sustainable Initiatives | Amid Venture" />
+  <meta
+    property="og:description"
+    content="Explore Amid Venture's commitment to sustainability and green initiatives. Learn how we foster eco-friendly practices for a better, greener future."
+  />
+  <meta property="og:url" content="https://www.amidventure.com/sustainability" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://www.amidventure.com/SustainabilityImages/hero-2.png" />
+  {/* Twitter */}
+  <meta name="twitter:title" content="Sustainable Initiatives | Amid Venture" />
+  <meta
+    name="twitter:description"
+    content="Explore Amid Venture's commitment to sustainability and green initiatives. Learn how we foster eco-friendly practices for a better, greener future."
+  />
+  <meta
+    name="twitter:image"
+    content="https://www.amidventure.com/SustainabilityImages/hero-2.png"
+  />
+  <meta name="twitter:card" content="summary_large_image" />
+</Helmet>
+
+
+      
       <Navbar />
 
       <header className="relative flex flex-row items-center justify-around h-[90vh] bg-white px-6 overflow-hidden md:pt-[4rem]">
@@ -52,18 +87,7 @@ const Sustainability = () => {
         <SustainabilityBody />
       </section>
 
-      {/* <section className="px-6 py-16 bg-stone-100 sm:px-10 lg:px-20">
-        <div className="max-w-5xl mx-auto text-center">
-          <h2 className="mb-6 text-4xl font-light text-gray-900 sm:text-5xl font-dmSerifText">
-            Join Our Mission
-          </h2>
-          <p className="max-w-3xl mx-auto text-lg font-light text-gray-900 sm:text-xl">
-            Partner with us to create extraordinary sustainable solutions that
-            benefit our planet, people, and purpose. Together, we can build an
-            exceptional future.
-          </p>
-        </div>
-      </section> */}
+
 
       
 <section>

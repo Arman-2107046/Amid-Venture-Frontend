@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import {motion} from 'framer-motion'
@@ -5,6 +6,38 @@ import {motion} from 'framer-motion'
 const PrivacyPolicy = () => {
   return (
     <div className="flex flex-col min-h-screen text-stone-800">
+
+<Helmet>
+  <title>Privacy Policy | Amid Venture</title>
+  <meta
+    name="description"
+    content="Read Amid Venture’s Privacy Policy to learn how we collect, use, and protect your personal information with transparency and care."
+  />
+  <link rel="canonical" href="https://www.amidventure.com/privacy-policy" />
+  <link rel="icon" type="image/webp" href="/amid-crop2.webp" />
+  <meta name="robots" content="index, follow" />
+
+  {/* Open Graph / Facebook */}
+  <meta property="og:title" content="Privacy Policy | Amid Venture" />
+  <meta
+    property="og:description"
+    content="Learn about Amid Venture’s commitment to protecting your privacy and personal data."
+  />
+  <meta property="og:url" content="https://www.amidventure.com/privacy-policy" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://www.amidventure.com/amid-crop2.webp" />
+
+  {/* Twitter */}
+  <meta name="twitter:title" content="Privacy Policy | Amid Venture" />
+  <meta
+    name="twitter:description"
+    content="Read how Amid Venture protects your personal data and respects your privacy."
+  />
+  <meta name="twitter:image" content="https://www.amidventure.com/amid-crop2.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+</Helmet>
+
+      
       {/* Navbar */}
       <Navbar />
 
@@ -18,14 +51,7 @@ const PrivacyPolicy = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 1.2 }}
         >
-          {/* <motion.img
-            src="/aboutImages/image.webp"
-            alt="Cotton World Sourcing Logo"
-            className="object-contain w-32 mb-8 sm:w-40 lg:w-48"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, delay: 0.5 }}
-          /> */}
+
           <motion.h1
             className="space-y-1 text-4xl sm:text-7xl lg:text-8xl"
             initial={{ y: 50, opacity: 0 }}

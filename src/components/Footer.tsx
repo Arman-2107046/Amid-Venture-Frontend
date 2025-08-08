@@ -111,7 +111,7 @@ export default function Footer() {
           {/* Logo & Copyright */}
           <div className="flex flex-col items-center gap-4 text-center md:flex-row md:text-left text-stone-500">
             <img
-              src="/amid-crop2.png"
+              src="/amid-crop2.webp"
               alt="AMID Logo"
               className="w-24 grayscale"
             />
