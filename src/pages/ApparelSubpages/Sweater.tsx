@@ -108,6 +108,8 @@ const Sweater: React.FC = () => {
         <img
           src="/ApparelImages/HeroImages/sweater-hero.webp"
           alt="Premium Knitwear"
+          loading="lazy"
+
           className="absolute inset-0 object-cover w-full h-full"
         />
 
@@ -174,6 +176,8 @@ const Sweater: React.FC = () => {
               <img
                 src={img.src}
                 alt={img.category}
+                            loading="lazy"
+
                 className="w-full h-full object-cover transition-all duration-[1200ms] ease-in-out opacity-0 scale-105 blur-sm group-hover:scale-100 group-hover:blur-0 group-hover:opacity-100"
                 onLoad={(e) => {
                   const image = e.target as HTMLImageElement;

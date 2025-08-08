@@ -74,6 +74,7 @@ const Sustainability = () => {
           <img
             src="/SustainabilityImages/hero-2.png"
             alt="hero image"
+            loading="lazy"
             className="object-cover"
           />
         </div>

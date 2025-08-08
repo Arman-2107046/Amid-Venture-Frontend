@@ -8,7 +8,7 @@ import { Plus, ArrowRight } from "lucide-react";
 const businessAreas = [
   {
     title: "AMID SOURCING",
-    image: "/BusinessImages/sourcing2.jpg",
+    image: "/BusinessImages/sourcing2.webp",
     description:
       "Crafting high-quality fashion garments with refined design and superior stitching for global retailers.",
     path: "/sourcing",
@@ -17,7 +17,7 @@ const businessAreas = [
 
   {
     title: "AMID DESIGN STUDIO",
-    image: "/BusinessImages/design.jpg",
+    image: "/BusinessImages/design.webp",
     description:
       "Producing elegant accessories that complement modern lifestyles, combining style with function.",
     path: "/design",
@@ -25,21 +25,21 @@ const businessAreas = [
 
   {
     title: "AMID IT VENTURE",
-    image: "/BusinessImages/it.jpg",
+    image: "/BusinessImages/it.webp",
     description:
       "Providing innovative IT solutions, from software development to digital transformation and automation.",
     path: "/it",
   },
   {
     title: " AMID INVESTMENTS",
-    image: "/BusinessImages/realestate.jpg",
+    image: "/BusinessImages/realestate.webp",
     description:
       "Developing dynamic, sustainable real estate projects that redefine modern living and commercial spaces.",
     path: "/investments",
   },
   {
     title: "AMID AGRICULTURE",
-    image: "/BusinessImages/agriculture3.jpg",
+    image: "/BusinessImages/agriculture3.webp",
     description:
       "Empowering agriculture with modern practices to ensure high-yield, sustainable, and ethical farming.",
     path: "/agriculture",

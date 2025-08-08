@@ -125,6 +125,8 @@ const Sourcing = () => {
                 <img
                   src={`/ApparelImages/HeroImages/${img}`}
                   alt={`Hero ${idx}`}
+                  loading="lazy"
+
                   className="object-cover w-full h-full transition-transform duration-500 hover:scale-110"
                 />
               </motion.div>

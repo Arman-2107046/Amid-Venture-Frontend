@@ -59,7 +59,7 @@ const Contact = () => {
 
         <div
           className="absolute inset-0 bg-cover bg-center brightness-[0.4]"
-          style={{ backgroundImage: "url('/ContactImages/contact-hero.jpg')" }}
+          style={{ backgroundImage: "url('/ContactImages/contact-hero.webp')" }}
           aria-label="Bangladesh textile production"
         />
         <div className="absolute inset-0 z-0 bg-gradient-to-br from-slate/70 to-gray/90" />

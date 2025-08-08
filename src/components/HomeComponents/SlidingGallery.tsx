@@ -3,21 +3,21 @@ import { motion, useAnimation, useMotionValue } from "framer-motion";
 import { useEffect, useRef, useCallback } from "react";
 
 const images = [
-  "/HomeImages/gallery1.jpg",
-  "/HomeImages/gallery2.jpg",
-  "/HomeImages/gallery3.jpg",
-  "/HomeImages/gallery4.jpg",
-  "/HomeImages/gallery5.jpg",
-  "/HomeImages/gallery6.jpg",
-  "/HomeImages/gallery7.jpg",
-  "/HomeImages/gallery8.jpg",
-  "/HomeImages/gallery9.jpg",
-  "/HomeImages/gallery10.jpg",
-  "/HomeImages/gallery11.jpg",
-  "/HomeImages/gallery12.jpg",
-  "/HomeImages/gallery13.jpg",
-  "/HomeImages/gallery14.jpg",
-  "/HomeImages/gallery15.jpg",
+  "/HomeImages/gallery1.webp",
+  "/HomeImages/gallery2.webp",
+  "/HomeImages/gallery3.webp",
+  "/HomeImages/gallery4.webp",
+  "/HomeImages/gallery5.webp",
+  "/HomeImages/gallery6.webp",
+  "/HomeImages/gallery7.webp",
+  "/HomeImages/gallery8.webp",
+  "/HomeImages/gallery9.webp",
+  "/HomeImages/gallery10.webp",
+  "/HomeImages/gallery11.webp",
+  "/HomeImages/gallery12.webp",
+  "/HomeImages/gallery13.webp",
+  "/HomeImages/gallery14.webp",
+  "/HomeImages/gallery15.webp",
 ];
 
 export default function SlidingGallery() {
@@ -135,10 +135,6 @@ export default function SlidingGallery() {
               src={src}
               alt={`Gallery image ${(i % images.length) + 1}`}
               className="object-cover w-full h-full pointer-events-none select-none "
-              // onError={(e) => {
-              //   // Fallback for missing images
-              //   e.currentTarget.src = `https://picsum.photos/270/200?random=${i}`;
-              // }}
               loading="lazy" // Add lazy loading for performance
             />
           </div>

@@ -59,8 +59,9 @@ const ScrollBackground = () => {
             {/* RIGHT IMAGE - Overlapping 20% with text */}
             <div className="absolute w-[20rem] sm:w-[30] md:w-[40rem] lg:w-[50rem] sm:top-30 md:top-10 lg:top-10 lg:right-40">
               <img
-                src="/HomeImages/leading.jpg"
+                src="/HomeImages/leading.webp"
                 alt="Leading"
+                loading='lazy'
                 className="object-cover w-full h-full "
               />
             </div>

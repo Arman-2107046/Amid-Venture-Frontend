@@ -48,6 +48,8 @@ const Mission = () => {
               <img
                 src={item.image}
                 alt={item.title}
+                loading="lazy"
+
                 className="object-cover w-full h-full transition-transform duration-500 transform group-hover:scale-110"
               />
 

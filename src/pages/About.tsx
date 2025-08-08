@@ -159,6 +159,8 @@ const About = () => {
               <img
                 src="/AboutImages/about2.webp"
                 alt="Team 2"
+                loading="lazy"
+
                 className="object-cover w-full h-full transition-transform duration-500 ease-in-out hover:scale-105"
               />
             </div>
@@ -168,6 +170,8 @@ const About = () => {
               <img
                 src="/AboutImages/about1.webp"
                 alt="Team 1"
+                loading="lazy"
+
                 className="object-cover w-full h-full transition-transform duration-500 ease-in-out hover:scale-105"
               />
             </div>

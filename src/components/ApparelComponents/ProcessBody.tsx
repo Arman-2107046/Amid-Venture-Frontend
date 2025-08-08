@@ -109,7 +109,12 @@ export default function ProcessBody() {
               >
                 <div className="flex items-center justify-center w-full bg-gray-200 rounded-lg h-96">
                   {/* <span className="text-gray-500">Image Placeholder</span> */}
-                  <img src={step.src} alt="image"  className="object-cover w-full h-full"/>
+                  <img
+                    src={step.src}
+                    alt="image"
+                    loading="lazy"
+                    className="object-cover w-full h-full"
+                  />
                 </div>
               </motion.div>
             </div>

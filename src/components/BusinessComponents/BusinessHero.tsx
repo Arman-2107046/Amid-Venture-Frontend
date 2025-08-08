@@ -2,16 +2,16 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const images = [
-  "/BusinessImages/business-hero1.jpg",
-  "/BusinessImages/business-hero2.jpg",
-  "/BusinessImages/business-hero3.jpg",
-  "/BusinessImages/business-hero4.jpg",
-  "/BusinessImages/business-hero5.jpg",
-  "/BusinessImages/business-hero6.jpg",
-  "/BusinessImages/business-hero7.jpg",
-  "/BusinessImages/business-hero8.jpg",
-  "/BusinessImages/business-hero9.jpg",
-  "/BusinessImages/business-hero10.jpg",
+  "/BusinessImages/business-hero1.webp",
+  "/BusinessImages/business-hero2.webp",
+  "/BusinessImages/business-hero3.webp",
+  "/BusinessImages/business-hero4.webp",
+  "/BusinessImages/business-hero5.webp",
+  "/BusinessImages/business-hero6.webp",
+  "/BusinessImages/business-hero7.webp",
+  "/BusinessImages/business-hero8.webp",
+  "/BusinessImages/business-hero9.webp",
+  "/BusinessImages/business-hero10.webp",
 ];
 
 export default function BusinessHero() {
@@ -46,6 +46,7 @@ export default function BusinessHero() {
             key={images[index]}
             src={images[index]}
             alt="Business Slide"
+            loading="lazy"
             initial={{ x: direction * 300, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: direction * -300, opacity: 0 }}

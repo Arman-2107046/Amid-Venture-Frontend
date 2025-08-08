@@ -96,6 +96,8 @@ export default function SustainableSolutions() {
                 <img
                   src={item.image}
                   alt={item.title}
+                  loading="lazy"
+
                   className="w-full h-[250px] sm:h-[300px] lg:h-[320px] object-cover transform transition-transform duration-500 hover:scale-105"
                 />
               </div>
