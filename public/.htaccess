@@ -1,0 +1,5 @@
+# Enable Rewrite Engine
+RewriteEngine On
+
+# Rewrite all requests to index.html
+RewriteRule ^ /index.html [L]
