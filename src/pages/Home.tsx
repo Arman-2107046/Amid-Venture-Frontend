@@ -40,7 +40,7 @@ const Home = () => {
   <meta name="author" content="Amid Venture" />
   <meta property="og:title" content="Amid Venture | Thriving in Excellence, Expanding the Horizon" />
   <meta property="og:description" content="Strategic global commerce partner across fashion, food, IT, agriculture, and real estate." />
-  <meta property="og:image" content="https://www.amidventure.com/og-home.jpg" />
+  <meta property="og:image" content="https://www.amidventure.com/amid.webp" />
   <meta property="og:url" content="https://www.amidventure.com" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -68,7 +68,7 @@ const Home = () => {
           preload="auto"
           className="absolute inset-0 w-full h-full object-cover brightness-[.7] blur-2"
         >
-          <source src="/HomeImages/final-hero-720.mp4" type="video/mp4" />
+          <source src="/HomeImages/final-hero-720.webm" type="video/webm" />
           Your browser does not support the video tag.
         </video>
 
