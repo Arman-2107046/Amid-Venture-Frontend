@@ -8,5 +8,6 @@ RewriteRule ^ - [L]
 # Otherwise, rewrite to index.html (for SPA routing)
 RewriteRule ^ /index.html [L]
 
-# Optional: force correct MIME for JS files
+# Force correct MIME types for JS and CSS files
 AddType application/javascript .js
+AddType text/css .css
